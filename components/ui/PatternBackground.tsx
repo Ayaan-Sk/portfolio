@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 function PatternBackground() {
   const fillPath = (paths: NodeListOf<SVGPathElement>) => {
-    for (let count = 0; count < 10; count++) {
+    for (let count = 0; count < 4; count++) {
       let pathIndex = Math.floor(Math.random() * paths.length);
       paths[pathIndex].classList.add("animate-animateSVG");
       setTimeout(() => {
@@ -13,42 +13,40 @@ function PatternBackground() {
     }
   };
 
-  // useEffect(() => {
-  //   let paths: NodeListOf<SVGPathElement> =
-  //     document.querySelectorAll("svg path");
+  useEffect(() => {
+    let paths: NodeListOf<SVGPathElement> =
+      document.querySelectorAll("svg path");
 
-  //   fillPath(paths);
+    fillPath(paths);
 
-  //   let fillInterval = setInterval(() => {
-  //     fillPath(paths);
-  //   }, 6000);
+    let fillInterval = setInterval(() => {
+      fillPath(paths);
+    }, 6000);
 
-  //   return () => {
-  //     clearInterval(fillInterval);
-  //   };
-  // });
+    return () => {
+      clearInterval(fillInterval);
+    };
+  });
 
   return (
     <div
-      className="fixed top-0 left-0 w-screen h-screen overflow-hidden flex items-center justify-center border-2 border-lime-500"
-      // style={{
-      //   backgroundImage: "url('/vector-bg.svg')",
-      //   backgroundRepeat: "no-repeat",
-      //   backgroundSize: "cover",
-      //   backgroundPosition: "50% 50%",
-      // }}
+      className="fixed top-0 left-0 w-screen h-screen overflow-hidden flex items-center justify-center"
+      style={{
+        backgroundImage: "url('/vector_bg.svg')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "50% 50%",
+      }}
     >
       <svg
-        className="absolute border-2 border-red-500"
-        // width="4014"
-        // height="5539"
-        height={"100%"}
-        width={"100%"}
+        height="100%"
+        width="100%"
         viewBox="0 0 4014 5539"
+        preserveAspectRatio="xMidYMid slice"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        // strokeDasharray={1100}
-        // strokeDashoffset={1100}
+        strokeDasharray={1100}
+        strokeDashoffset={1100}
       >
         <path
           d="M3747 1634V1782L3834 1693.5"
@@ -3868,13 +3866,13 @@ function PatternBackground() {
         />
       </svg>
 
-      {/* <div
-        className="absolute top-0 left-0 w-full h-full"
+      <div
+        className="absolute inset-0 w-full h-full"
         style={{
           backgroundImage:
-            "radial-gradient(circle, rgb(0, 0, 0, 0.1) 10%, rgb(0, 0, 0, 0.6))",
+            "radial-gradient(circle, rgb(0, 0, 0, 0.4) 40%, rgb(0, 0, 0, 0.8))",
         }}
-      ></div> */}
+      ></div>
     </div>
   );
 }

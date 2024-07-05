@@ -1,5 +1,5 @@
-import "@/styles/globals.css";
-import { inter, poppins } from "@/fonts";
+import "@/styles/global.css";
+import { poppins } from "@/fonts";
 
 export const metadata = {
   title: "ca~io",

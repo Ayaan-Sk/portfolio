@@ -3,7 +3,6 @@ import {
   Poiret_One,
   Great_Vibes,
   Montserrat_Alternates,
-  Sacramento,
   Poppins,
 } from "next/font/google";
 import localFont from "next/font/local";
@@ -24,26 +23,29 @@ const poiret_one = Poiret_One({
   style: "normal",
   weight: ["400"],
   subsets: ["latin"],
-  display: "swap",
 });
 const montserrat_alternates = Montserrat_Alternates({
   style: "normal",
   subsets: ["latin"],
   weight: ["400", "500"],
-  display: "swap",
 });
-const sacramento = Sacramento({
-  style: "normal",
-  subsets: ["latin"],
-  weight: ["400"],
+const sacramento = localFont({
+  src: "./public/LocalFonts/Sacramento-Regular.ttf",
 });
+
 const plaster = localFont({
-  src: "./public/Plaster-Regular.ttf",
-  display: "swap",
+  src: "./public/LocalFonts/Plaster-Regular.ttf",
+  preload: true,
 });
+
 const stretch = localFont({
-  src: "./public/StretchPro.otf",
-  display: "swap",
+  src: "./public/LocalFonts/StretchPro.otf",
+  preload: true,
+});
+
+const morona = localFont({
+  src: "./public/LocalFonts/Morona.otf",
+  preload: true,
 });
 
 export {
@@ -55,4 +57,5 @@ export {
   sacramento,
   plaster,
   stretch,
+  morona,
 };

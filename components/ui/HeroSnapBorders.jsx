@@ -18,7 +18,7 @@ function HeroSnapBorders() {
     <div
       className={`${
         showSnapBorders ? "opacity-100" : "opacity-0"
-      } absolute top-0 left-0 right-0 bottom-0 transition-opacity duration-500`}
+      } absolute top-0 left-0 right-0 bottom-0 transition-opacity duration-500 z-10`}
     >
       <div className="rounded-sm size-5 border-2 border-r-transparent border-b-transparent absolute left-8 top-8"></div>
 

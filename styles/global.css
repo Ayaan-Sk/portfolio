@@ -6,6 +6,11 @@
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: #61cc9c;
+  color: black;
+}
+
 body {
   color: #fffffff2;
   background-color: #110f16;

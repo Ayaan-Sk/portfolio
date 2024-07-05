@@ -19,6 +19,8 @@ module.exports = {
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
+        animateSkills: "animateSkills 60s linear infinite",
+        animateSkillsReverse: "animateSkillsReverse 60s linear infinite",
       },
       keyframes: {
         spotlight: {
@@ -73,6 +75,22 @@ module.exports = {
           },
           "100%": {
             transform: "translateY(-50%)",
+          },
+        },
+        animateSkills: {
+          "0%": {
+            left: "100%",
+          },
+          "100%": {
+            left: "-250px",
+          },
+        },
+        animateSkillsReverse: {
+          "0%": {
+            right: "100%",
+          },
+          "100%": {
+            right: "-250px",
           },
         },
       },

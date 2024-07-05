@@ -6,8 +6,8 @@ import { CopyIcon } from "@/lib/icons";
 
 function BentoGrid() {
   return (
-    <div className="flex flex-col md:grid grid-cols-6 grid-rows-2 lg:grid-rows-3 w-full flex-1 gap-4">
-      <div className="flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] bg-black/[70%] col-span-2">
+    <div className="flex flex-col md:grid md:grid-cols-6 md:grid-rows-2 lg:grid-rows-3 w-full flex-1 gap-4">
+      <div className="flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2">
         <CardCorners />
         <h1 className={`${montserrat_alternates.className}`}>Address</h1>
         <div className="flex flex-col items-center m-auto gap-2">
@@ -15,11 +15,13 @@ function BentoGrid() {
           <span className="text-gray-400">Satellite</span>
         </div>
       </div>
-      <div className="flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] bg-black/[70%] col-span-2">
+      <div
+        className={`flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2 ${montserrat_alternates.className}`}
+      >
         <CardCorners />
         <h1 className={`${montserrat_alternates.className}`}>Education</h1>
         <div className="flex flex-col items-center m-auto gap-2">
-          <h1 className="text-2xl font-bold text-center">
+          <h1 className={`text-2xl font-bold text-center`}>
             BSc. Computer Science
           </h1>
           <span className="text-center text-gray-400">
@@ -27,12 +29,13 @@ function BentoGrid() {
           </span>
         </div>
       </div>
-
-      <div className="flex flex-col justify-start items-start p-4 relative min-h-[200px] border border-white/[50%] col-span-2 gap-8">
+      <div className="flex flex-col justify-start items-start p-4 relative min-h-[200px] border bg-black/[20%] border-white/[50%] col-span-2 gap-8">
         <CardCorners />
         <InteractiveGradientBg />
 
-        <h1 className={`relative ${poppins.className} whitespace-nowrap`}>
+        <h1
+          className={`relative ${montserrat_alternates.className} whitespace-nowrap font-semibold`}
+        >
           Tech Stack
         </h1>
         <span className="relative text-base">
@@ -72,13 +75,13 @@ function BentoGrid() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center p-4 relative min-h-[200px] border border-white/[50%] row-span-2 col-span-3">
+      <div className="flex flex-col items-center justify-center p-4 relative min-h-[200px] border bg-black/[20%] border-white/[50%] row-span-2 col-span-3">
         <CardCorners />
         <InteractiveGradientBg />
         <h1
-          className={`relative ${montserrat_alternates.className} text-2xl md:text-5xl font-semibold`}
+          className={`relative ${montserrat_alternates.className} text-2xl md:text-4xl lg:text-5xl font-semibold`}
         >
-          ~ connect
+          let&apos;s ~ connect
         </h1>
         <div className="relative flex gap-4 mt-6">
           <FancyButtonAlt icon={CopyIcon} title="Copy Email" />
@@ -87,9 +90,12 @@ function BentoGrid() {
           <div className="hidden md:flex h-full aspect-square rounded-full bg-black items-center justify-center"></div>
         </div>
       </div>
-      <div className="flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] row-span-2 col-span-3 lg:col-span-2 bg-black/[70%]">
+
+      <div className="flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] row-span-2 col-span-3 lg:col-span-2 bg-black/[20%] backdrop-blur-md">
         <CardCorners />
-        <span>ca.io</span>
+        <span>
+          creative ambition <i className="text-[#61cc9c]">{"{ ca.io }"}</i>
+        </span>
 
         <div className="relative flex flex-col items-center my-auto">
           <h1
@@ -99,11 +105,27 @@ function BentoGrid() {
           </h1>
         </div>
       </div>
-      <div className="items-center p-4 hidden lg:block relative min-h-[200px] border border-white/[50%] bg-black/[70%]">
+
+      <div className="hidden p-4 lg:flex flex-col justify-center relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
+        <h1 className="">...</h1>
+
+        <div className="flex flex-col mt-auto">
+          <FancyButtonAlt title="Download" />
+        </div>
       </div>
-      <div className="items-center p-4 hidden lg:block relative min-h-[200px] border border-white/[50%] bg-black/[70%]">
+
+      <div className="hidden justify-center p-4 lg:flex flex-col relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
+        <h1 className="">Resume</h1>
+        <span className="relative text-sm mt-4 opacity-80">
+          a result of <i>half-a-decade</i> of continuous learning and
+          self-improvements
+        </span>
+
+        <div className="flex flex-col mt-auto">
+          <FancyButtonAlt title="Download File" />
+        </div>
       </div>
     </div>
   );
