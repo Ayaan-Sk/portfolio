@@ -1,17 +1,19 @@
 import { montserrat_alternates, sacramento } from "@/fonts";
-import ProjectCards from "@/components/ui/ProjectCards";
+import AboutCard from "@/components/ui/AboutCard";
+import Image from "next/image";
+import StoryAndDetailsCard from "@/components/StoryAndDetailsCard";
 
 function About() {
   return (
     <div
       id="about"
-      className="about relative flex flex-col w-screen h-[65vh] md:h-[80v] px-4 py-16 md:flex-row md:px-[50px] lg:px-[150px] lg:pr-[100px] pointer-events-none"
+      className="relative flex flex-col w-screen h-screen lg:h-[80vh] px-4 py-16 pb-0 lg:flex-row md:px-[50px] lg:px-[40px] xl:px-[180px] pointer-events-none gap-8 md:gap-0"
     >
       <div
-        className={`${montserrat_alternates.className} flex flex-col flex-1 items-center md:items-start`}
+        className={`${montserrat_alternates.className} flex md:flex-1 flex-col items-center md:items-start pointer-events-auto`}
       >
         <span
-          className={`${sacramento.className} mb-10 text-3xl md:text-3xl lg:text-4xl -rotate-[12deg] mt-9`}
+          className={`${sacramento.className} mb-8 md:mb-12 text-3xl md:text-3xl lg:text-4xl -rotate-[12deg] mt-9`}
         >
           Hey mate! I&apos;m
         </span>
@@ -26,13 +28,27 @@ function About() {
         </span>
       </div>
 
-      <div
-        className="hidden md:flex flex-1 items-center justify-center lg:gap-8 overflow-hidden"
-        style={{
-          maskImage: "radial-gradient(circle, black, transparent)",
-        }}
-      >
-        <ProjectCards />
+      <div className="relative md:flex flex-1 mx-auto lg:ml-auto items-center justify-center lg:gap-8 md:px-2 pointer-events-auto w-full">
+        <AboutCard detailsCard={false}>
+          <Image
+            height={100}
+            width={100}
+            className="test-card absolute w-full h-full top-0 left-0 object-cover"
+            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHlvdW5kJTIwYWR1bHQlMjBtYWxlfGVufDB8fDB8fHww"
+            alt="profile pic"
+          />
+        </AboutCard>
+
+        <AboutCard
+          detailsCard={true}
+          className="details-card top-[50%] md:top-auto md:left-[60%]"
+        >
+          <span className="text-[#61cc9c] font-semibold text-base md:text-2xl">
+            # Dev-101
+          </span>
+
+          <StoryAndDetailsCard />
+        </AboutCard>
       </div>
     </div>
   );

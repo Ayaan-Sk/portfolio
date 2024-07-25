@@ -21,7 +21,7 @@ export default function SplineScene() {
         />
       </div>
 
-      <div className="absolute size-[250px] md:size-[450px] top-[50%] left-[8%] lg:left-[40%] lg:translate-x-[-50%] -translate-y-[50%] bg-[#61cc9c]/[0.8] -z-10 rounded-full blur-[200px]"></div>
+      <div className="absolute size-[250px] md:size-[450px] top-[50%] left-[8%] lg:left-[50%] lg:translate-x-[-50%] -translate-y-[50%] bg-[#61cc9c]/[0.8] -z-10 rounded-full blur-[200px]"></div>
 
       <Spline scene="https://prod.spline.design/YTurGkXAz-yWLxOO/scene.splinecode" />
     </div>

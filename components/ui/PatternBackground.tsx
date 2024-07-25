@@ -1,32 +1,46 @@
 "use client";
-
 import { useEffect } from "react";
-
 function PatternBackground() {
   const fillPath = (paths: NodeListOf<SVGPathElement>) => {
-    for (let count = 0; count < 4; count++) {
+    const selectedIndices = new Set<number>();
+
+    while (selectedIndices.size < 5) {
       let pathIndex = Math.floor(Math.random() * paths.length);
-      paths[pathIndex].classList.add("animate-animateSVG");
-      setTimeout(() => {
-        paths[pathIndex].classList.remove("animate-animateSVG");
-      }, 6000);
+      selectedIndices.add(pathIndex);
     }
+
+    selectedIndices.forEach((pathIndex) => {
+      const path = paths[pathIndex];
+      path.classList.add("animate-animateSVG");
+
+      const handleAnimationEnd = () => {
+        path.classList.remove("animate-animateSVG");
+        path.removeEventListener("animationend", handleAnimationEnd);
+      };
+
+      path.addEventListener("animationend", handleAnimationEnd);
+    });
   };
 
   useEffect(() => {
     let paths: NodeListOf<SVGPathElement> =
-      document.querySelectorAll("svg path");
+      document.querySelectorAll("#pattern-bg path");
 
-    fillPath(paths);
-
-    let fillInterval = setInterval(() => {
+    let animationFrameId: number;
+    const animatePaths = () => {
       fillPath(paths);
-    }, 6000);
+      animationFrameId = requestAnimationFrame(() =>
+        setTimeout(animatePaths, 6000)
+      );
+    };
+    animatePaths();
 
     return () => {
-      clearInterval(fillInterval);
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
     };
-  });
+  }, []);
 
   return (
     <div
@@ -39,6 +53,7 @@ function PatternBackground() {
       }}
     >
       <svg
+        id="pattern-bg"
         height="100%"
         width="100%"
         viewBox="0 0 4014 5539"
@@ -3870,7 +3885,7 @@ function PatternBackground() {
         className="absolute inset-0 w-full h-full"
         style={{
           backgroundImage:
-            "radial-gradient(circle, rgb(0, 0, 0, 0.4) 40%, rgb(0, 0, 0, 0.8))",
+            "radial-gradient(circle, transparent, rgb(0, 0, 0, 0.9))",
         }}
       ></div>
     </div>

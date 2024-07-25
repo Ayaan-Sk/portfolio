@@ -8,6 +8,7 @@ import Biography from "@/components/Biography";
 import Projects from "@/components/Projects";
 import SkillsAndServices from "@/components/SkillsAndServices";
 import Contact from "@/components/Contact";
+import ScrollIndicator from "@/components/ui/ScrollIndicator";
 
 export default function Home() {
   return (
@@ -16,14 +17,15 @@ export default function Home() {
 
       <PatternBackground />
 
-      <Spotlight className="-top-8 -left-12 h-[500px] !opacity-[50%] md:h-[700px] md:left-40 lg:left-64" />
+      <Spotlight className="-top-8 -left-12 h-[500px] md:h-[700px] md:left-40 lg:left-64" />
       <Spotlight
-        className="top-20 -left-16 h-[450px] !opacity-[35%] md:h-[600px] md:-left-8"
+        className="top-16 -left-16 h-[450px] md:h-[600px] md:-left-8"
         fill="#61CC9C"
       />
 
+      <ScrollIndicator />
       <Hero />
-      <SplineScene />
+      {/* <SplineScene /> */}
       <About />
       <Biography />
       <SkillsAndServices />

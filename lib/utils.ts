@@ -1,19 +1,37 @@
+import { AiOutlineYoutube } from "react-icons/ai";
+import { FaInstagram, FaWhatsapp, FaFacebookF } from "react-icons/fa6";
+
 export const navItems = [
   {
     name: "Home",
-    link: "#hero",
+    link: "hero",
   },
   {
     name: "About",
-    link: "#about",
+    link: "about",
   },
   {
     name: "Projects",
-    link: "#projects",
+    link: "projects",
   },
   {
     name: "Contact",
-    link: "#contact",
+    link: "contact",
+  },
+];
+
+export const socials = [
+  {
+    name: "YouTube",
+    Icon: AiOutlineYoutube,
+  },
+  {
+    name: "Instagram",
+    Icon: FaInstagram,
+  },
+  {
+    name: "Facebook",
+    Icon: FaFacebookF,
   },
 ];
 
@@ -38,6 +56,10 @@ export const FrontEndSkills = [
     name: "Solid",
     img: "/StackLogos/solidjs.png",
   },
+  {
+    name: "Astro",
+    img: "/StackLogos/astro.png",
+  },
 ];
 export const BackEndSkills = [
   {
@@ -46,7 +68,7 @@ export const BackEndSkills = [
   },
   {
     name: "Express",
-    img: "",
+    img: "/StackLogos/express.png",
   },
   {
     name: "Next",
@@ -63,7 +85,7 @@ export const BackEndSkills = [
 ];
 export const dbSkills = [
   {
-    name: "Posgres",
+    name: "Postgres",
     img: "/StackLogos/postgres.png",
   },
   {
@@ -94,7 +116,7 @@ export const otherSkills = [
   },
   {
     name: "Jira",
-    img: "",
+    img: "/StackLogos/jira.png",
   },
   {
     name: "Spline 3D",
@@ -108,23 +130,140 @@ export const otherSkills = [
 
 export const projects = [
   {
-    name: "Revo.Wallet",
-    description: "Financial Technology {FinTech} SaaS Platform",
+    title: "Revo.Wallet",
+    techs: [
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+      "/StackLogos/mongo.png",
+      "/StackLogos/react.png",
+      "/StackLogos/sass.png",
+    ],
+    thumbnail: "/ProjectThumbnails/revo.png",
+    github: "https://github.com/creativeambition",
+    description: "FinTech SaaS Landing Page",
   },
   {
-    name: "Infinity Commerce",
-    description: "E-Commerce app",
+    title: "La Ultimate Collection",
+    techs: [
+      "/StackLogos/astro.png",
+      "/StackLogos/sass.png",
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+    ],
+    thumbnail: "/ProjectThumbnails/LUC.png",
+    github: "https://github.com/creativeambition",
+    description: "E-Commerce App",
   },
   {
-    name: "Infinity Commerce",
-    description: "E-Commerce app",
+    title: "Outstagram",
+    techs: [
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+      "/StackLogos/mongo.png",
+      "/StackLogos/react.png",
+      "/StackLogos/sass.png",
+    ],
+    thumbnail: "/ProjectThumbnails/LUC.png",
+    github: "https://github.com/creativeambition",
+    description:
+      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
   },
   {
-    name: "Infinity Commerce",
-    description: "E-Commerce app",
+    title: "Movilla",
+    techs: [
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+      "/StackLogos/mongo.png",
+      "/StackLogos/react.png",
+      "/StackLogos/sass.png",
+    ],
+    thumbnail: "/ProjectThumbnails/LUC.png",
+    github: "https://github.com/creativeambition",
+    description:
+      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
   },
   {
-    name: "Infinity Commerce",
-    description: "E-Commerce app",
+    title: "Zenchat",
+    techs: [
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+      "/StackLogos/mongo.png",
+      "/StackLogos/react.png",
+      "/StackLogos/sass.png",
+    ],
+    thumbnail: "/ProjectThumbnails/LUC.png",
+    github: "https://github.com/creativeambition",
+    description:
+      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+  },
+  {
+    title: "Dash",
+    techs: [
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+      "/StackLogos/mongo.png",
+      "/StackLogos/react.png",
+      "/StackLogos/sass.png",
+    ],
+    thumbnail: "/ProjectThumbnails/LUC.png",
+    github: "https://github.com/creativeambition",
+    description:
+      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+  },
+  {
+    title: "Cube Adventure 2d",
+    techs: [
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+      "/StackLogos/mongo.png",
+      "/StackLogos/react.png",
+      "/StackLogos/sass.png",
+    ],
+    thumbnail: "/ProjectThumbnails/LUC.png",
+    github: "https://github.com/creativeambition",
+    description:
+      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+  },
+  {
+    title: "Infinity Studios",
+    techs: [
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+      "/StackLogos/mongo.png",
+      "/StackLogos/react.png",
+      "/StackLogos/sass.png",
+    ],
+    thumbnail: "/ProjectThumbnails/LUC.png",
+    github: "https://github.com/creativeambition",
+    description:
+      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+  },
+  {
+    title: "Infinity-Reads Club",
+    techs: [
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+      "/StackLogos/mongo.png",
+      "/StackLogos/react.png",
+      "/StackLogos/sass.png",
+    ],
+    thumbnail: "/ProjectThumbnails/LUC.png",
+    github: "https://github.com/creativeambition",
+    description:
+      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+  },
+  {
+    title: "NFT-Portfolio",
+    techs: [
+      "/StackLogos/next.png",
+      "/StackLogos/tailwind.png",
+      "/StackLogos/mongo.png",
+      "/StackLogos/react.png",
+      "/StackLogos/sass.png",
+    ],
+    thumbnail: "/ProjectThumbnails/LUC.png",
+    github: "https://github.com/creativeambition",
+    description:
+      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
   },
 ];

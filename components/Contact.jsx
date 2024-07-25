@@ -1,5 +1,7 @@
 import { poiret_one } from "@/fonts";
 import { FancyButtonAlt } from "./ui/FancyButton";
+import PlaceholderTextAnimation from "./ui/PlaceholderTextAnimation";
+import { RiMailSendFill } from "react-icons/ri";
 
 function Contact() {
   return (
@@ -13,17 +15,34 @@ function Contact() {
         infinity studios
       </span>
 
-      <div className="flex flex-col items-center gap-12 md:px-20 lg:px-[200px] mt-[30px]">
-        <h1 className="text-center text-2xl md:text-4xl lg:text-5xl font-bold">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          facilis sapiente quas?
-        </h1>
-        <div className="flex">
-          <FancyButtonAlt title="Send me an email" />
+      <div className="flex flex-col items-center justify-center gap-12 md:px-20 lg:px-[200px] mt-[30px] md:tracking-wide">
+        <div className="flex flex-col gap-2 md:gap-3 items-center text-center text-3xl md:text-5xl lg:text-5xl font-medium">
+          Ready to make your
+          <div className="flex items-center">
+            <PlaceholderTextAnimation
+              texts={["brand", "service", "business", "product"]}
+            />
+            <span className="flex whitespace-nowrap">
+              &nbsp;appearance&nbsp;
+              <span className="hidden md:flex">in the</span>
+            </span>
+          </div>
+          <div>
+            <span className="md:hidden">in the&nbsp;</span>
+            <span className="relative mt-3 before:absolute before:h-[20px] before:w-full before:border-t before:top-[130%] before:rotate-[-8deg] before:rounded-[100%]">
+              digital world?
+            </span>
+          </div>
+        </div>
+
+        <div className="flex mt-12">
+          <FancyButtonAlt icon={<RiMailSendFill />} title="Get in touch" />
         </div>
       </div>
 
-      <footer className="mt-auto w-full flex justify-center gap-2 opacity-[70%]">
+      <footer
+        className={`${poiret_one.className} mt-auto w-full flex justify-center gap-2 opacity-[70%]`}
+      >
         &copy;<span>infinity studios, 2024</span>
       </footer>
     </div>
