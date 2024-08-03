@@ -1,4 +1,4 @@
-import { montserrat_alternates, morona } from "@/fonts";
+import { montserrat_alternates, morona } from "@/lib/fonts";
 import { projects } from "@/lib/utils";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";

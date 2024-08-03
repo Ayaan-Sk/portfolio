@@ -1,4 +1,4 @@
-import { montserrat_alternates } from "@/fonts";
+import { montserrat_alternates } from "@/lib/fonts";
 import CardCorners from "./CardCorners";
 import { InteractiveGradientBg } from "@/components/ui/InteractiveGradientBg";
 import { FancyButtonAlt } from "./FancyButton";

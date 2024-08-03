@@ -1,4 +1,4 @@
-import { plaster } from "@/fonts";
+import { plaster } from "@/lib/fonts";
 import BentoGrid from "@/components/ui/BentoGrid";
 
 function Biography() {

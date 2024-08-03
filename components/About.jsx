@@ -1,4 +1,4 @@
-import { montserrat_alternates, sacramento } from "@/fonts";
+import { montserrat_alternates, sacramento } from "@/lib/fonts";
 import AboutCard from "@/components/ui/AboutCard";
 import Image from "next/image";
 import StoryAndDetailsCard from "@/components/StoryAndDetailsCard";

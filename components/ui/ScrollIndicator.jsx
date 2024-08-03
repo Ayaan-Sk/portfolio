@@ -1,6 +1,6 @@
 "use client";
 
-import { sacramento } from "@/fonts";
+import { sacramento } from "@/lib/fonts";
 import { useEffect, useState } from "react";
 
 function ScrollIndicator() {

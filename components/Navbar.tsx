@@ -1,5 +1,5 @@
 "use client";
-import { montserrat_alternates } from "@/fonts";
+import { montserrat_alternates } from "@/lib/fonts";
 import { navItems } from "@/lib/utils";
 import { Link } from "react-scroll";
 

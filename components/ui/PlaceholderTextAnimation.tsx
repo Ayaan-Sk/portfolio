@@ -1,5 +1,5 @@
 "use client";
-import { morona } from "@/fonts";
+import { morona } from "@/lib/fonts";
 import { useEffect } from "react";
 
 const PlaceholderTextAnimation = ({ texts }: { texts: string[] }) => {

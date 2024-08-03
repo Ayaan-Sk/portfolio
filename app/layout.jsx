@@ -1,5 +1,5 @@
 import "@/styles/global.css";
-import { poppins } from "@/fonts";
+import { poppins } from "@/lib/fonts";
 import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata = {

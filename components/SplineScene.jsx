@@ -1,4 +1,4 @@
-import { sacramento } from "@/fonts";
+import { sacramento } from "@/lib/fonts";
 import Spline from "@splinetool/react-spline/next";
 import Image from "next/image";
 import NoodleArrow from "@/public/noodle_arrow.svg";

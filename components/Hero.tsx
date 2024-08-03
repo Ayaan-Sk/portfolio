@@ -1,4 +1,4 @@
-import { morona, sacramento, stretch } from "@/fonts";
+import { morona, sacramento, stretch } from "@/lib/fonts";
 import { FancyButton } from "./ui/FancyButton";
 
 function Hero() {

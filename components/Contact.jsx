@@ -1,4 +1,4 @@
-import { poiret_one, sacramento } from "@/fonts";
+import { poiret_one, sacramento } from "@/lib/fonts";
 import PlaceholderTextAnimation from "./ui/PlaceholderTextAnimation";
 import { socials } from "@/lib/utils";
 import { BsArrowRight } from "react-icons/bs";
@@ -43,9 +43,9 @@ function Contact() {
       <div className="w-screen my-auto px-3 flex items-center justify-center">
         <div className="flex flex-wrap gap-4 md:gap-8 justify-center content-center">
           {socials.map((social) => (
-            <div key={social.name} className="flex border gap-3">
+            <div key={social.name} className="flex gap-3 items-center">
               <span className="">{social.name}</span>
-              <BsArrowRight />
+              <BsArrowRight className="group-hover:translate-x-3 group-hover:-rotate-45 transition-transform" />
             </div>
           ))}
         </div>
