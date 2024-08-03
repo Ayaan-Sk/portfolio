@@ -1,4 +1,4 @@
-import { montserrat_alternates, morona, sacramento, stretch } from "@/fonts";
+import { morona, sacramento, stretch } from "@/fonts";
 import { FancyButton } from "./ui/FancyButton";
 
 function Hero() {
@@ -7,7 +7,7 @@ function Hero() {
       id="hero"
       className="relative flex flex-col min-h-[100vh]  px-2 items-center w-screen"
     >
-      <div className="relative flex flex-col items-center w-fit pt-[100px] md:pt-[120px]">
+      <div className="relative flex flex-col items-center w-fit mt-[100px] md:mt-[120px]">
         <span className={`text-base sm:text-lg text-gray-400 mb-4`}>ca.io</span>
         <div className="flex flex-col items-center gap-3 lg:gap-5">
           <h1
@@ -40,22 +40,8 @@ function Hero() {
         </div>
       </div>
 
-      <FancyButton target="projects" />
-
-      <div
-        className={`${montserrat_alternates.className} text-base flex flex-col items-center gap-2 mt-auto mb-10 z-10`}
-      >
-        <span className="font-medium">Come Along</span>
-        <div
-          className="size-[100px] -rotate-90 -translate-y-[10px]"
-          style={{
-            backgroundImage: "url(/arrow.png)",
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            filter: "invert(1)",
-          }}
-        ></div>
+      <div className="mb-auto">
+        <FancyButton target="projects" />
       </div>
     </div>
   );

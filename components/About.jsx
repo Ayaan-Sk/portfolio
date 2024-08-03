@@ -2,12 +2,13 @@ import { montserrat_alternates, sacramento } from "@/fonts";
 import AboutCard from "@/components/ui/AboutCard";
 import Image from "next/image";
 import StoryAndDetailsCard from "@/components/StoryAndDetailsCard";
+import me from "@/public/me.jpg";
 
 function About() {
   return (
     <div
       id="about"
-      className="relative flex flex-col w-screen h-screen lg:h-[80vh] px-4 py-16 pb-0 lg:flex-row md:px-[50px] lg:px-[40px] xl:px-[180px] pointer-events-none gap-8 md:gap-0"
+      className="relative flex flex-col w-screen h-screen lg:h-[80vh] px-2 py-16 pb-0 lg:flex-row md:px-[50px] lg:px-[40px] xl:px-[180px] gap-8 md:gap-0"
     >
       <div
         className={`${montserrat_alternates.className} flex md:flex-1 flex-col items-center md:items-start pointer-events-auto`}
@@ -34,14 +35,14 @@ function About() {
             height={100}
             width={100}
             className="test-card absolute w-full h-full top-0 left-0 object-cover"
-            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHlvdW5kJTIwYWR1bHQlMjBtYWxlfGVufDB8fDB8fHww"
-            alt="profile pic"
+            src={me}
+            alt="profile"
           />
         </AboutCard>
 
         <AboutCard
           detailsCard={true}
-          className="details-card top-[50%] md:top-auto md:left-[60%]"
+          className="details-card top-[40%] right-0 md:top-auto md:left-[60%]"
         >
           <span className="text-[#61cc9c] font-semibold text-base md:text-2xl">
             # Dev-101

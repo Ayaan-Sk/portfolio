@@ -115,8 +115,8 @@ export const otherSkills = [
     img: "/StackLogos/aws.png",
   },
   {
-    name: "Jira",
-    img: "/StackLogos/jira.png",
+    name: "Google Cloud",
+    img: "/StackLogos/gcp.png",
   },
   {
     name: "Spline 3D",
@@ -177,7 +177,7 @@ export const projects = [
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/LUC.png",
+    thumbnail: "/ProjectThumbnails/movilla.png",
     github: "https://github.com/creativeambition",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
@@ -191,7 +191,7 @@ export const projects = [
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/LUC.png",
+    thumbnail: "/ProjectThumbnails/movilla.png",
     github: "https://github.com/creativeambition",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
@@ -205,7 +205,7 @@ export const projects = [
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/LUC.png",
+    thumbnail: "/ProjectThumbnails/movilla.png",
     github: "https://github.com/creativeambition",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
@@ -219,7 +219,7 @@ export const projects = [
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/LUC.png",
+    thumbnail: "/ProjectThumbnails/movilla.png",
     github: "https://github.com/creativeambition",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
@@ -233,7 +233,7 @@ export const projects = [
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/LUC.png",
+    thumbnail: "/ProjectThumbnails/movilla.png",
     github: "https://github.com/creativeambition",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
@@ -247,7 +247,7 @@ export const projects = [
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/LUC.png",
+    thumbnail: "/ProjectThumbnails/movilla.png",
     github: "https://github.com/creativeambition",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
@@ -261,7 +261,7 @@ export const projects = [
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/LUC.png",
+    thumbnail: "/ProjectThumbnails/movilla.png",
     github: "https://github.com/creativeambition",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",

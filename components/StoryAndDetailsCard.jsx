@@ -97,20 +97,20 @@ const StoryAndDetailsCard = () => {
 
       <button
         className="relative flex items-center justify-center gap-2 mt-auto border border-[#61cc9c]/[40%] py-3 before:absolute before:size-[10px] before:left-0 before:top-0 before:border-2 before:border-[#61cc9c] before:border-b-0 before:border-r-0 after:absolute after:size-[10px] after:right-0 after:bottom-0 after:border-2 after:border-[#61cc9c] after:border-t-0 after:border-l-0"
-        onClick={() => {
+        onClick={(event) => {
           setShowStory((prev) => !prev);
         }}
       >
         {showStory ? (
           <>
-            <span>View Profile</span>
+            <span className="text-sm md:text-base">View Profile</span>
             <div className="text-2xl">
               <MdOutlineKeyboardDoubleArrowRight />
             </div>
           </>
         ) : (
           <>
-            <div className="text-2xl">
+            <div className="text-sm md:text-base">
               <MdOutlineKeyboardDoubleArrowLeft />
             </div>
             <span>Back to Story</span>

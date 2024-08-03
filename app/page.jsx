@@ -9,10 +9,12 @@ import Projects from "@/components/Projects";
 import SkillsAndServices from "@/components/SkillsAndServices";
 import Contact from "@/components/Contact";
 import ScrollIndicator from "@/components/ui/ScrollIndicator";
+import Loading from "@/components/Loading";
 
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
+      <Loading />
       <Navbar />
 
       <PatternBackground />
@@ -25,7 +27,7 @@ export default function Home() {
 
       <ScrollIndicator />
       <Hero />
-      {/* <SplineScene /> */}
+      <SplineScene />
       <About />
       <Biography />
       <SkillsAndServices />

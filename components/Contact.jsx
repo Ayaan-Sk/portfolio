@@ -1,7 +1,7 @@
-import { poiret_one } from "@/fonts";
-import { FancyButtonAlt } from "./ui/FancyButton";
+import { poiret_one, sacramento } from "@/fonts";
 import PlaceholderTextAnimation from "./ui/PlaceholderTextAnimation";
-import { RiMailSendFill } from "react-icons/ri";
+import { socials } from "@/lib/utils";
+import { BsArrowRight } from "react-icons/bs";
 
 function Contact() {
   return (
@@ -29,14 +29,25 @@ function Contact() {
           </div>
           <div>
             <span className="md:hidden">in the&nbsp;</span>
-            <span className="relative mt-3 before:absolute before:h-[20px] before:w-full before:border-t before:top-[130%] before:rotate-[-8deg] before:rounded-[100%]">
+            <span className="relative mt-3 before:absolute before:h-[20px] before:w-full before:border-t before:top-[120%] before:rotate-[-8deg] before:rounded-[100%]">
               digital world?
             </span>
           </div>
         </div>
 
-        <div className="flex mt-12">
+        {/* <div className="flex mt-12">
           <FancyButtonAlt icon={<RiMailSendFill />} title="Get in touch" />
+        </div> */}
+      </div>
+
+      <div className="w-screen my-auto px-3 flex items-center justify-center">
+        <div className="flex flex-wrap gap-4 md:gap-8 justify-center content-center">
+          {socials.map((social) => (
+            <div key={social.name} className="flex border gap-3">
+              <span className="">{social.name}</span>
+              <BsArrowRight />
+            </div>
+          ))}
         </div>
       </div>
 

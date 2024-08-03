@@ -6,17 +6,27 @@ import { FaRegCopy } from "react-icons/fa6";
 import { socials } from "@/lib/utils";
 import Game from "../Game";
 import { PiFilePdfFill } from "react-icons/pi";
+import { RiChatSmile3Line } from "react-icons/ri";
 
 function BentoGrid() {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-6 md:grid-rows-2 xl:grid-rows-3 w-full flex-1 gap-4">
-      <div className="flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2">
+    <div className="flex flex-col md:grid md:grid-cols-6 md:grid-rows-2 xl:grid-rows-3 w-full flex-1 gap-4 border">
+      <div className="relative flex flex-col items-center p-4 min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2">
         <CardCorners />
         <h1 className={`${montserrat_alternates.className}`}>Address</h1>
         <div className="flex flex-col items-center m-auto gap-2">
           <h1 className="text-2xl font-bold">Ghana ~ Accra</h1>
           <span className="text-gray-400">Satellite</span>
         </div>
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: "url('/illustration-alt.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        ></div>
       </div>
 
       <div
@@ -31,6 +41,15 @@ function BentoGrid() {
           <span className="text-center text-gray-400">
             Ghana Communication Technology University
           </span>
+          <div
+            className="absolute inset-0 opacity-30"
+            style={{
+              backgroundImage: "url('/address-illustration.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
         </div>
       </div>
 
@@ -125,8 +144,8 @@ function BentoGrid() {
         <CardCorners />
 
         <span className="mb-4">
-          Let&apos;s play a little game of ~{" "}
-          <b className={`text-[#61cc9c]`}>XOXO</b>
+          Let&apos;s play a game of{" "}
+          <b className={`text-[#61cc9c]`}>Classic Chess😎</b>
         </span>
 
         <div className="relative my-auto w-full">
@@ -134,17 +153,35 @@ function BentoGrid() {
         </div>
       </div>
 
-      <div className="hidden p-4 xl:flex flex-col justify-center relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
+      <div className="flex md:hidden p-4 xl:flex flex-col justify-center relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
-        <h1 className="">...</h1>
+        <span className="text-center mx-auto self-center">
+          Freelance Software Developer
+        </span>
+        <div
+          className="flex-1 min-h-[100px] mb-4"
+          style={{
+            backgroundImage: "url('/contact/fiverr.png')",
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        ></div>
+
+        <div className="flex flex-col w-full mt-4">
+          <FancyButtonAlt
+            icon={<RiChatSmile3Line />}
+            title="Get in touch"
+            link="https://www.fiverr.com/users/chrysyt"
+          />
+        </div>
       </div>
 
       <div className="hidden justify-center p-4 xl:flex flex-col relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
         <h1 className="">Resume</h1>
         <span className="relative text-sm mt-4 opacity-80">
-          a result of <i>half-a-decade</i> of continuous learning and
-          self-improvements
+          <i>blah blah blah</i>
         </span>
 
         <div className="flex flex-col mt-auto">
