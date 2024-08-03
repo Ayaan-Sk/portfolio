@@ -43,9 +43,9 @@ function Contact() {
       <div className="w-screen my-auto px-3 flex items-center justify-center">
         <div className="flex flex-wrap gap-4 md:gap-8 justify-center content-center">
           {socials.map((social) => (
-            <div key={social.name} className="flex gap-3 items-center">
+            <div key={social.name} className="group flex gap-3 items-center">
               <span className="">{social.name}</span>
-              <BsArrowRight className="group-hover:translate-x-3 group-hover:-rotate-45 transition-transform" />
+              <BsArrowRight className="opacity-0 group-hover:opacity-100 group-hover:translate-x-3 group-hover:-rotate-45 transition-all" />
             </div>
           ))}
         </div>
