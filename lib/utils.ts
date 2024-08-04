@@ -1,5 +1,5 @@
-import { AiOutlineYoutube } from "react-icons/ai";
-import { FaInstagram, FaWhatsapp, FaFacebookF } from "react-icons/fa6";
+import { FaGithub, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
 
 export const navItems = [
   {
@@ -20,18 +20,45 @@ export const navItems = [
   },
 ];
 
-export const socials = [
+export const contacts = [
   {
-    name: "YouTube",
-    Icon: AiOutlineYoutube,
+    name: "Mail",
+    link: "mailto:chrysayita@gmail.com",
+  },
+  {
+    name: "Fiverr",
+    link: "https://www.fiverr.com/users/chrysyt",
   },
   {
     name: "Instagram",
-    Icon: FaInstagram,
+    link: "https://instagram.com/_creative_ambition",
   },
   {
-    name: "Facebook",
-    Icon: FaFacebookF,
+    name: "Whatsapp",
+    link: "https://wa.me/+233204255719",
+  },
+];
+
+export const socials = [
+  {
+    name: "Github",
+    Icon: FaGithub,
+    link: "https://github.com/creativeambition/",
+  },
+  {
+    name: "YouTube",
+    Icon: FaYoutube,
+    link: "https://youtube.com/@creative-ambition/",
+  },
+  {
+    name: "Instagram",
+    Icon: AiFillInstagram,
+    link: "https://instagram.com/_creative_ambition/",
+  },
+  {
+    name: "TikTok",
+    Icon: FaTiktok,
+    link: "https://tiktok.com/@creative_ambition/",
   },
 ];
 

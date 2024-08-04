@@ -3,7 +3,7 @@ import BentoGrid from "@/components/ui/BentoGrid";
 
 function Biography() {
   return (
-    <div className="relative mt-4 md:mt-[150px] min-h-[100vh] w-screen py-[50px] lg:py-[100px] flex flex-col items-center px-2 md:px-[20px] lg:px-8 xl:px-24">
+    <div className="relative mt-4 md:mt-[150px] lg:mt-0 min-h-[100vh] w-screen py-[50px] lg:py-[100px] flex flex-col items-center px-2 md:px-[20px] lg:px-8 xl:px-24">
       <div
         className={`${plaster.className} flex items-center justify-center w-full gap-2 text-[40px] md:text-[80px] lg:text-[100px] xl:text-9xl`}
       >

@@ -8,7 +8,7 @@ function About() {
   return (
     <div
       id="about"
-      className="relative flex flex-col w-screen h-screen lg:h-[80vh] px-2 py-16 pb-0 lg:flex-row md:px-[50px] lg:px-[40px] xl:px-[180px] gap-8 md:gap-0"
+      className="relative flex flex-col w-screen md:max-lg:h-screen lg:h-[80vh] px-2 py-16 pb-0 lg:flex-row md:px-[50px] lg:px-[40px] xl:px-[180px] gap-8 md:gap-0"
     >
       <div
         className={`${montserrat_alternates.className} flex md:flex-1 flex-col items-center md:items-start pointer-events-auto`}
@@ -29,7 +29,7 @@ function About() {
         </span>
       </div>
 
-      <div className="relative md:flex flex-1 mx-auto lg:ml-auto items-center justify-center lg:gap-8 md:px-2 pointer-events-auto w-full">
+      <div className="relative min-h-[60vh] md:min-h-fit md:flex mt-[350px] md:mt-0 flex-1 mx-auto lg:ml-auto items-center justify-center lg:gap-8 md:px-2 pointer-events-auto w-full">
         <AboutCard detailsCard={false}>
           <Image
             height={100}

@@ -7,10 +7,11 @@ import { socials } from "@/lib/utils";
 import Game from "../Game";
 import { PiFilePdfFill } from "react-icons/pi";
 import { RiChatSmile3Line } from "react-icons/ri";
+import Link from "next/link";
 
 function BentoGrid() {
   return (
-    <div className="flex flex-col md:grid md:grid-cols-6 md:grid-rows-2 xl:grid-rows-3 w-full flex-1 gap-4 border">
+    <div className="flex flex-col md:grid md:grid-cols-6 md:grid-rows-2 xl:grid-rows-3 w-full flex-1 gap-4">
       <div className="relative flex flex-col items-center p-4 min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2">
         <CardCorners />
         <h1 className={`${montserrat_alternates.className}`}>Address</h1>
@@ -30,7 +31,7 @@ function BentoGrid() {
       </div>
 
       <div
-        className={`flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2 ${montserrat_alternates.className}`}
+        className={`flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2`}
       >
         <CardCorners />
         <h1 className={`${montserrat_alternates.className}`}>Education</h1>
@@ -109,10 +110,15 @@ function BentoGrid() {
         </span>
 
         <h1
-          className={`relative ${montserrat_alternates.className} text-2xl md:text-3xl lg:text-4xl font-semibold`}
+          className={`relative ${montserrat_alternates.className} text-2xl md:text-3xl lg:text-5xl font-semibold`}
         >
           ~ Creative Ambition
         </h1>
+
+        <p className="relative max-w-[90%] md:max-w-[70%] text-center mt-4 mb-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          obcaecati architecto est.
+        </p>
 
         <div className="relative flex gap-4 mt-8 mb-auto">
           <div className="flex xl:hidden">
@@ -123,14 +129,16 @@ function BentoGrid() {
             <FancyButtonAlt icon={<FaRegCopy />} title="Copy Email" />
           </div>
 
-          {socials.map(({ name, Icon }) => {
+          {socials.map(({ name, Icon, link }) => {
             return (
-              <div
+              <Link
                 key={name}
+                href={link}
+                target="_blank"
                 className="h-full aspect-square rounded-full bg-black flex items-center justify-center text-xl cursor-pointer"
               >
                 <Icon />
-              </div>
+              </Link>
             );
           })}
         </div>
@@ -156,10 +164,11 @@ function BentoGrid() {
       <div className="flex md:hidden p-4 xl:flex flex-col justify-center relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
         <span className="text-center mx-auto self-center">
-          Freelance Software Developer
+          Freelance Software Developer{" "}
+          <em className="text-[#61cc9c]">@fiverr</em>
         </span>
         <div
-          className="flex-1 min-h-[100px] mb-4"
+          className="h-[70px] my-auto"
           style={{
             backgroundImage: "url('/contact/fiverr.png')",
             backgroundSize: "contain",
@@ -168,13 +177,17 @@ function BentoGrid() {
           }}
         ></div>
 
-        <div className="flex flex-col w-full mt-4">
+        <Link
+          href={"https://www.fiverr.com/users/chrysyt"}
+          target="_blank"
+          className="flex flex-col w-full mt-4"
+        >
           <FancyButtonAlt
             icon={<RiChatSmile3Line />}
             title="Get in touch"
             link="https://www.fiverr.com/users/chrysyt"
           />
-        </div>
+        </Link>
       </div>
 
       <div className="hidden justify-center p-4 xl:flex flex-col relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
@@ -184,9 +197,9 @@ function BentoGrid() {
           <i>blah blah blah</i>
         </span>
 
-        <div className="flex flex-col mt-auto">
+        <Link download href="" className="flex flex-col mt-auto">
           <FancyButtonAlt icon={<PiFilePdfFill />} title="Download" />
-        </div>
+        </Link>
       </div>
     </div>
   );

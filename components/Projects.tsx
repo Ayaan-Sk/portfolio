@@ -30,7 +30,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="relative min-w-[100%] h-full bg-[#61cc9c] snap-center flex flex-col items-center pt-14 md:pt-[100px] px-2"
+              className="relative min-w-[100%] h-full bg-[#61cc9c] snap-center flex flex-col items-center pt-14 md:pt-[100px] px-2 md:px-4"
             >
               <Link href={project.github} target="_blank">
                 <div
@@ -43,7 +43,7 @@ function Projects() {
                 </div>
               </Link>
 
-              <span className="text-base text-black/[80%] mt-2 max-w-[95%] md:max-w-[60%] lg:max-w-[28%] text-center font-medium">
+              <span className="text-base text-black/[80%] mt-2 max-w-[95%] md:max-w-[65%] lg:max-w-[28%] text-center font-medium">
                 {project.description}
               </span>
 
@@ -63,10 +63,12 @@ function Projects() {
               </div>
 
               <div
-                className="flex-1 flex flex-col items-center justify-center w-full !bg-[length:100%] md:!bg-[length:70%] bg-top"
+                className="flex-1 flex items-center justify-center w-full lg:w-[60%]"
                 style={{
                   backgroundImage: `url(${project.thumbnail})`,
                   backgroundRepeat: "no-repeat",
+                  backgroundSize: "cover",
+                  backgroundPosition: "top",
                 }}
               ></div>
             </div>

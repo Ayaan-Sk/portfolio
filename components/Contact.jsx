@@ -1,7 +1,8 @@
 import { poiret_one, sacramento } from "@/lib/fonts";
 import PlaceholderTextAnimation from "./ui/PlaceholderTextAnimation";
-import { socials } from "@/lib/utils";
+import { contacts, socials } from "@/lib/utils";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 
 function Contact() {
   return (
@@ -34,22 +35,20 @@ function Contact() {
             </span>
           </div>
         </div>
-
-        {/* <div className="flex mt-12">
-          <FancyButtonAlt icon={<RiMailSendFill />} title="Get in touch" />
-        </div> */}
       </div>
 
-      <div className="w-screen my-auto px-3 flex items-center justify-center">
-        <div className="flex flex-wrap gap-4 md:gap-8 justify-center content-center">
-          {socials.map((social) => (
-            <div
-              key={social.name}
-              className="group flex gap-3 items-center cursor-pointer"
+      <div className="w-screen mt-auto flex flex-col items-center justify-center">
+        <div className="flex flex-wrap gap-12 md:gap-8 justify-center content-center">
+          {contacts.map((contact) => (
+            <Link
+              key={contact.name}
+              href={contact.link}
+              target="_blank"
+              className="group flex items-center cursor-pointer opacity-40 hover:opacity-100"
             >
-              <span className="">{social.name}</span>
-              <BsArrowRight className="opacity-0 group-hover:opacity-100 group-hover:translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-45 transition-all" />
-            </div>
+              <span className="">{contact.name}</span>
+              <BsArrowRight className="opacity-0 group-hover:opacity-100 group-hover:translate-x-2 group-hover:-translate-y-1 group-hover:-rotate-[35deg] transition-all" />
+            </Link>
           ))}
         </div>
       </div>

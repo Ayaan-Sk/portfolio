@@ -1,4 +1,5 @@
 "use client";
+import { montserrat_alternates } from "@/lib/fonts";
 import { createContext, useContext, useEffect, useState } from "react";
 const GameState = createContext(null);
 function Game() {
@@ -118,9 +119,11 @@ function Game() {
         <span>
           Player turn ~&nbsp;<b className="text-[#61cc9c]">{PlayerTurn}</b>
         </span>
-        <div className="w-full flex justify-between">
-          <span>you: {scores.X}</span>
-          <span>me: {scores.O}</span>
+        <div
+          className={`${montserrat_alternates.className} w-full flex justify-between`}
+        >
+          <span>user X: {scores.X || "_"}</span>
+          <span>ca: {scores.O || "_"}</span>
         </div>
       </div>
     </>
