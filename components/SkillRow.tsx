@@ -17,9 +17,10 @@ function SkillRow({
   const animationPlayState = useCallback(() => {
     if (!skillsRef.current) return;
 
-    const skills = skillsRef.current.getBoundingClientRect();
+    const skillsBounds = skillsRef.current.getBoundingClientRect();
     const isOutOfViewport =
-      skills.top > window.innerHeight || skills.bottom < 0;
+      skillsBounds.top > window.innerHeight + Number(window.innerHeight / 3) ||
+      skillsBounds.bottom < 0;
     const newPlayState = isOutOfViewport ? "paused" : "running";
 
     skillCardsRef.current.forEach((card) => {
@@ -77,13 +78,12 @@ function SkillRow({
             reverse
               ? "right-[100%] animate-animateSkillsReverse"
               : "left-[100%] animate-animateSkills"
-          } h-[80px] md:h-[100px] w-[150px] md:w-[250px] bg-black rounded-lg border border-white/[20%] flex items-center justify-center transition-all`}
+          } h-[80px] md:h-[100px] w-[150px] md:w-[250px] bg-black rounded-lg border border-white/[50%] flex items-center justify-center transition-all`}
           style={{
             boxShadow: "0 10px 24px -20px #61cc9c",
-            animationDelay: `${(index * 60) / skills.length}s`,
+            animationDelay: `${(index * 30) / skills.length}s`,
           }}
         >
-          <h1 className="z-10">{skill.name}</h1>
           <Image
             src={skill.img}
             alt="skill-logo"
@@ -91,6 +91,7 @@ function SkillRow({
             width={100}
             className="absolute left-2 h-[80%] w-auto object-contain opacity-60"
           />
+          <h1 className="z-10">{skill.name}</h1>
         </div>
       ))}
     </div>

@@ -1,4 +1,4 @@
-import { FaGithub, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { FaFacebook, FaGithub, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 
 export const navItems = [
@@ -20,6 +20,8 @@ export const navItems = [
   },
 ];
 
+export const foo = ["Full-Stack Developer", "3D Artist", "Mobile Developer"]
+
 export const contacts = [
   {
     name: "Mail",
@@ -36,6 +38,10 @@ export const contacts = [
   {
     name: "Whatsapp",
     link: "https://wa.me/+233204255719",
+  },
+  {
+    name: "Facebook",
+    link: "https://facebook.com/chrysYT",
   },
 ];
 
@@ -59,6 +65,11 @@ export const socials = [
     name: "TikTok",
     Icon: FaTiktok,
     link: "https://tiktok.com/@creative_ambition/",
+  },
+  {
+    name: "Facebook",
+    Icon: FaFacebook,
+    link: "https://facebook.com/@creative_ambition/",
   },
 ];
 
@@ -157,97 +168,39 @@ export const otherSkills = [
 
 export const projects = [
   {
-    title: "Revo.Wallet",
-    techs: [
-      "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
-      "/StackLogos/mongo.png",
-      "/StackLogos/react.png",
-      "/StackLogos/sass.png",
-    ],
-    thumbnail: "/ProjectThumbnails/revo.png",
-    github: "https://github.com/creativeambition",
-    description: "FinTech SaaS Landing Page",
-  },
-  {
     title: "La Ultimate Collection",
-    techs: [
-      "/StackLogos/astro.png",
-      "/StackLogos/sass.png",
-      "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
-    ],
+    techs: ["/StackLogos/astro.png", "/StackLogos/sass.png"],
     thumbnail: "/ProjectThumbnails/LUC.png",
-    github: "https://github.com/creativeambition",
     description: "E-Commerce App",
-  },
-  {
-    title: "Outstagram",
-    techs: [
-      "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
-      "/StackLogos/mongo.png",
-      "/StackLogos/react.png",
-      "/StackLogos/sass.png",
-    ],
-    thumbnail: "/ProjectThumbnails/LUC.png",
-    github: "https://github.com/creativeambition",
-    description:
-      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
   },
   {
     title: "Movilla",
     techs: [
-      "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
-      "/StackLogos/mongo.png",
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
+      "/StackLogos/firebase.png",
     ],
     thumbnail: "/ProjectThumbnails/movilla.png",
-    github: "https://github.com/creativeambition",
-    description:
-      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+    description: "movie streaming web-app featuring TMDB",
   },
   {
-    title: "Zenchat",
+    title: "Revo.Wallet",
     techs: [
-      "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
-      "/StackLogos/mongo.png",
-      "/StackLogos/react.png",
+      "/StackLogos/html.png",
       "/StackLogos/sass.png",
+      "/StackLogos/js.png",
     ],
-    thumbnail: "/ProjectThumbnails/movilla.png",
-    github: "https://github.com/creativeambition",
-    description:
-      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+    thumbnail: "/ProjectThumbnails/revo.png",
+    description: "FinTech SaaS Landing Page",
   },
   {
-    title: "Dash",
+    title: "Omini",
     techs: [
       "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
-      "/StackLogos/mongo.png",
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/movilla.png",
-    github: "https://github.com/creativeambition",
-    description:
-      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
-  },
-  {
-    title: "Cube Adventure 2d",
-    techs: [
-      "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
-      "/StackLogos/mongo.png",
-      "/StackLogos/react.png",
-      "/StackLogos/sass.png",
-    ],
-    thumbnail: "/ProjectThumbnails/movilla.png",
-    github: "https://github.com/creativeambition",
+    thumbnail: "/ProjectThumbnails/omini.png",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
   },
@@ -255,13 +208,10 @@ export const projects = [
     title: "Infinity Studios",
     techs: [
       "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
-      "/StackLogos/mongo.png",
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
     thumbnail: "/ProjectThumbnails/movilla.png",
-    github: "https://github.com/creativeambition",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
   },
@@ -270,26 +220,9 @@ export const projects = [
     techs: [
       "/StackLogos/next.png",
       "/StackLogos/tailwind.png",
-      "/StackLogos/mongo.png",
-      "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
     thumbnail: "/ProjectThumbnails/movilla.png",
-    github: "https://github.com/creativeambition",
-    description:
-      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
-  },
-  {
-    title: "NFT-Portfolio",
-    techs: [
-      "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
-      "/StackLogos/mongo.png",
-      "/StackLogos/react.png",
-      "/StackLogos/sass.png",
-    ],
-    thumbnail: "/ProjectThumbnails/movilla.png",
-    github: "https://github.com/creativeambition",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
   },

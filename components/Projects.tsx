@@ -7,7 +7,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="relative w-screen min-h-[100vh] flex flex-col items-center justify-center py-10 md:py-20 md:pb-10 lg:pt-[80px] gap-8"
+      className="relative w-screen min-h-[100vh] flex flex-col items-center justify-center py-10 md:py-20 md:pb-20 lg:pt-[80px] xl:mt-20 gap-8"
     >
       <div className={`flex flex-col items-center text-2xl`}>
         <span className={`opacity-80 font-normal ${morona.className}`}>
@@ -32,12 +32,12 @@ function Projects() {
               key={index}
               className="relative min-w-[100%] h-full bg-[#61cc9c] snap-center flex flex-col items-center pt-14 md:pt-[100px] px-2 md:px-4"
             >
-              <Link href={project.github} target="_blank">
+              <Link href="https://github.com/creativeambition" target="_blank">
                 <div
                   className={`group relative flex items-center gap-4 text-3xl md:text-5xl lg:text-6xl text-black/[80%] font-bold ${montserrat_alternates.className} font-bold`}
                 >
                   {project.title}
-                  <div className="size-[30px] text-3xl group-hover:translate-x-4 group-hover:-translate-y-4 group-hover:-rotate-45 transition-transform">
+                  <div className="size-[30px] text-3xl group-hover:translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-[35deg] transition-transform">
                     <FaArrowRightLong />
                   </div>
                 </div>

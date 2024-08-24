@@ -6,7 +6,7 @@ import {
 } from "@/lib/utils";
 import SkillRow from "./SkillRow";
 
-function SkillsAndServices() {
+function TechnicalSkills() {
   return (
     <div className="relative min-h-[100vh] w-screen flex justify-center items-center pb-10">
       <div
@@ -24,4 +24,4 @@ function SkillsAndServices() {
   );
 }
 
-export default SkillsAndServices;
+export default TechnicalSkills;

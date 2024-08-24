@@ -6,15 +6,15 @@ import SplineScene from "@/components/SplineScene";
 import About from "@/components/About";
 import Biography from "@/components/Biography";
 import Projects from "@/components/Projects";
-import SkillsAndServices from "@/components/SkillsAndServices";
+import TechnicalSkills from "@/components/TechnicalSkills";
 import Contact from "@/components/Contact";
 import ScrollIndicator from "@/components/ui/ScrollIndicator";
-import Loading from "@/components/Loading";
+import UnderConstruction from "@/components/UnderConstruction";
 
 export default function Home() {
   return (
     <main className="relative flex min-h-screen flex-col items-center overflow-x-hidden">
-      <Loading />
+      <UnderConstruction />
       <Navbar />
 
       <PatternBackground />
@@ -30,7 +30,7 @@ export default function Home() {
       <SplineScene />
       <About />
       <Biography />
-      <SkillsAndServices />
+      <TechnicalSkills />
       <Projects />
       <Contact />
     </main>

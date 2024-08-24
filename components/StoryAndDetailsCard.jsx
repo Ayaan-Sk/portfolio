@@ -23,6 +23,23 @@ const StoryAndDetailsCard = () => {
     };
   });
 
+  function yearsSince(dateString) {
+    const pastDate = new Date(dateString);
+
+    const currentDate = new Date();
+
+    const yearsDifference = currentDate.getFullYear() - pastDate.getFullYear();
+
+    const monthDifference = currentDate.getMonth() - pastDate.getMonth();
+    const dayDifference = currentDate.getDate() - pastDate.getDate();
+
+    if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) {
+      return yearsDifference - 1;
+    }
+
+    return yearsDifference;
+  }
+
   return (
     <div className={`flex flex-1 flex-col mt-4 gap-2 w-full z-50`}>
       <h2 className="font-semibold">
@@ -77,16 +94,15 @@ const StoryAndDetailsCard = () => {
             phone ~{" "}
             <i className="font-medium text-[#61cc9c]">[+233] 20 425 5719</i>
           </h2>
-          {/* <hr /> */}
+          <hr className="opacity-25" />
           <h2>
             nationality ~ <i className="font-medium text-[#61cc9c]">Ghanaian</i>
           </h2>
           <h2>
-            date-of-birth ~{" "}
-            <i className="font-medium text-[#61cc9c]">24/11/2002</i>
-          </h2>
-          <h2>
-            age ~ <i className="font-medium text-[#61cc9c]">21</i>
+            age ~{" "}
+            <i className="font-medium text-[#61cc9c]">
+              {yearsSince("2002-11-24")}
+            </i>
           </h2>
           <h2>
             gender {"{"} default {"}"} ~{" "}

@@ -69,10 +69,8 @@ export function FancyButtonAlt({
 
   return (
     <>
-      <Script src="/confetti.min.js" />
       <button
         onClick={handleClick}
-        id="confetti-target"
         className="relative inline-flex h-12 overflow-hidden rounded-lg p-[2px] focus:outline-none active:scale-95 transition-transform"
       >
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#61cc9c_0%,#393BB2_50%,#61cc9c_100%)]" />

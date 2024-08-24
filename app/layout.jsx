@@ -4,7 +4,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata = {
   title: "ca~io",
-  description: "ca.io ~ portfolio website",
+  description: "portfolio website",
 };
 
 export default function RootLayout({ children }) {
