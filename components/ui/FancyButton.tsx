@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import { BsArrowRightShort } from "react-icons/bs";
 
@@ -25,59 +25,39 @@ export function FancyButton({ target }: { target: string }) {
 export function FancyButtonAlt({
   title,
   icon,
+  link,
 }: {
   title: string;
   icon?: JSX.Element;
   link?: string;
 }) {
-  const [resume, setResume] = useState(false);
-
   const [emailCopied, setEmailCopied] = useState(false);
-  const [resumeDownloaded, setResumeDownloaded] = useState(false);
-
-  useEffect(() => {
-    if (title == "Resume") {
-      setResume(true);
-    } else {
-      setResume(false);
-    }
-  }, [title]);
 
   function handleClick() {
-    switch (title) {
-      case "Resume":
-        setResumeDownloaded(true);
-        break;
-      case "Copy Email":
-        if (navigator.clipboard) {
-          navigator.clipboard.writeText("chrysayita@gmail.com");
-          setEmailCopied(true);
-        } else {
-          alert("Cannot perform operation on this system");
-        }
-        break;
-      default:
-        return;
+    if (link) {
+      window.open(link, "_blank");
+    }
+
+    if (title == "Copy Email") {
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText("chrysayita@gmail.com");
+        setEmailCopied(true);
+      } else {
+        alert("Cannot perform operation on this system");
+      }
     }
   }
 
   return (
     <button
       onClick={handleClick}
-      className="relative inline-flex h-12 overflow-hidden rounded-lg p-[2px] focus:outline-none active:scale-95 transition-transform"
+      className="relative mx-auto inline-flex h-12 overflow-hidden rounded-lg p-[2px] focus:outline-none active:scale-95 transition-transform"
     >
       <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#61cc9c_0%,#393BB2_50%,#61cc9c_100%)]" />
 
       <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-7 py-4 text-sm font-medium text-white backdrop-blur-3xl gap-2">
         {icon && <div className="fill-white text-xl">{icon}</div>}
-
-        {resume
-          ? resumeDownloaded
-            ? "Downloaded"
-            : title
-          : emailCopied
-          ? "Email copied"
-          : title}
+        {emailCopied ? "Email Copied" : title}
       </span>
     </button>
   );

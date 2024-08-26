@@ -12,7 +12,7 @@ import Link from "next/link";
 function BentoGrid() {
   return (
     <div className="flex flex-col md:grid md:grid-cols-6 md:grid-rows-2 xl:grid-rows-3 w-full flex-1 gap-4">
-      <div className="relative flex flex-col items-center p-4 min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2">
+      <div className="relative flex flex-col items-center p-4 min-h-[250px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2">
         <CardCorners />
         <h1 className={`${montserrat_alternates.className} font-semibold`}>
           Address
@@ -33,7 +33,7 @@ function BentoGrid() {
       </div>
 
       <div
-        className={`flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2`}
+        className={`flex flex-col items-center p-4 relative min-h-[250px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2`}
       >
         <CardCorners />
         <h1 className={`${montserrat_alternates.className} font-semibold`}>
@@ -58,7 +58,7 @@ function BentoGrid() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-start items-start p-4 relative min-h-[200px] border bg-black/[20%] border-white/[50%] col-span-2 gap-8">
+      <div className="flex flex-col justify-start items-start p-4 relative min-h-[250px] border bg-black/[20%] border-white/[50%] col-span-2 gap-8">
         <CardCorners />
         <InteractiveGradientBg />
 
@@ -113,7 +113,7 @@ function BentoGrid() {
         </div>
       </div>
 
-      <div className="relative flex flex-col items-center justify-center p-4 min-h-[200px] border bg-black/[20%] border-white/[50%] xl:row-span-2 col-span-3">
+      <div className="relative flex flex-col items-center justify-center p-4 min-h-[250px] border bg-black/[20%] border-white/[50%] xl:row-span-2 col-span-3">
         <CardCorners />
         <InteractiveGradientBg />
 
@@ -124,7 +124,7 @@ function BentoGrid() {
                 key={name}
                 href={link}
                 target="_blank"
-                className={`h-[40px] md:h-[60px] aspect-square rounded-xl bg-black border border-white/30 flex items-center justify-center text-4xl cursor-pointer`}
+                className={`h-[45px] md:h-[60px] aspect-square rounded-xl bg-black border border-white/30 flex items-center justify-center text-4xl cursor-pointer`}
                 style={{
                   "--size": socials.length,
                   "--index": index,
@@ -155,9 +155,14 @@ function BentoGrid() {
         </p>
 
         <div className="relative flex gap-4 mt-8 mb-auto">
-          <div className="flex xl:hidden">
+          <Link
+            download={true}
+            target="_blank"
+            href={"/resume.pdf"}
+            className="flex xl:hidden"
+          >
             <FancyButtonAlt icon={<PiFilePdfFill />} title="Download Resume" />
-          </div>
+          </Link>
 
           <div className="hidden xl:flex">
             <FancyButtonAlt icon={<FaRegCopy />} title="Copy Email" />
@@ -169,7 +174,7 @@ function BentoGrid() {
         </span>
       </div>
 
-      <div className="flex flex-col items-center p-4 relative min-h-[200px] border border-white/[50%] xl:row-span-2 col-span-3 xl:col-span-2 bg-black/[20%] backdrop-blur-md">
+      <div className="flex flex-col items-center p-4 relative min-h-[250px] border border-white/[50%] xl:row-span-2 col-span-3 xl:col-span-2 bg-black/[20%] backdrop-blur-md">
         <CardCorners />
 
         <span className="mb-4">
@@ -182,14 +187,12 @@ function BentoGrid() {
         </div>
       </div>
 
-      <div className="flex md:hidden p-4 xl:flex flex-col justify-center relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
+      <div className="flex justify-center md:hidden p-4 xl:flex flex-col relative min-h-[250px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
-
         <span className="text-center mx-auto self-center">
           Freelance Software Developer{" "}
           <em className="text-[#61cc9c]">@fiverr</em>
         </span>
-
         <div
           className="h-[70px] my-auto"
           style={{
@@ -200,16 +203,21 @@ function BentoGrid() {
           }}
         ></div>
 
-        <Link
+        {/* <Link
           href={"https://www.fiverr.com/users/chrysyt"}
           target="_blank"
-          className="flex flex-col w-full mt-4"
-        >
-          <FancyButtonAlt icon={<RiChatSmile3Line />} title="Get in touch" />
-        </Link>
+          className="mt-4"
+        > */}
+        <FancyButtonAlt
+          link="https://www.fiverr.com/users/chrysyt"
+          icon={<RiChatSmile3Line />}
+          title="Get in touch"
+        />
+
+        {/* </Link> */}
       </div>
 
-      <div className="hidden justify-center p-4 xl:flex flex-col relative min-h-[200px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
+      <div className="hidden justify-center p-4 xl:flex flex-col relative min-h-[250px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
         <h1 className="mx-auto">Download Resume</h1>
         <div
