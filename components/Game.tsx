@@ -200,7 +200,7 @@ function Game() {
           className={`${montserrat_alternates.className} w-full flex justify-between`}
         >
           <span>
-            👺{playerName} {"{"} X {"}"}: {scoresState.X || "_"}
+            🧠{playerName} {"{"} X {"}"}: {scoresState.X || "_"}
           </span>
           <span>
             🤖 {"{"} O {"}"}: {scoresState.O || "_"}

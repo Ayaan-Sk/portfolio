@@ -1,4 +1,4 @@
-import { montserrat_alternates } from "@/lib/fonts";
+import { montserrat_alternates, poppins } from "@/lib/fonts";
 import CardCorners from "./CardCorners";
 import { InteractiveGradientBg } from "@/components/ui/InteractiveGradientBg";
 import { FancyButtonAlt } from "./FancyButton";
@@ -79,12 +79,16 @@ function BentoGrid() {
               maskImage: "radial-gradient(circle, black, transparent)",
             }}
           >
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">React</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">Nextjs</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">Solid</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">Nodejs</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">Express</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">MongoDB</div>
+            {["Solid", "React", "Next", "Node", "Express", "MongoDB"].map(
+              (item) => (
+                <div
+                  key={item}
+                  className="bg-black rounded-lg p-4 py-2 text-sm"
+                >
+                  {item}
+                </div>
+              )
+            )}
           </div>
 
           <div
@@ -93,14 +97,18 @@ function BentoGrid() {
               maskImage: "radial-gradient(circle, black, transparent)",
             }}
           >
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">Postgres</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">MySQL</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">Blender</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">Spline</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">AWS</div>
-            <div className="bg-black rounded-lg p-4 py-2 text-sm">
-              Google cloud
-            </div>
+            {[
+              "Postgres",
+              "MySQL",
+              "Firebase",
+              "AWS",
+              "Google Cloud",
+              "Blender",
+            ].map((item) => (
+              <div key={item} className="bg-black rounded-lg p-4 py-2 text-sm">
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -137,14 +145,13 @@ function BentoGrid() {
         </div>
 
         <h1
-          className={`relative ${montserrat_alternates.className} text-2xl md:text-3xl lg:text-4xl font-semibold text-center`}
+          className={`relative ${poppins.className} text-2xl md:text-3xl lg:text-4xl font-semibold text-center`}
         >
-          @ Creative Ambition
+          @Creative Ambition
         </h1>
 
         <p className="relative max-w-[90%] md:max-w-[80%] lg:max-w-[70%] text-center mt-4 mb-2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-          tempore?
+          Get in touch via any of the above platforms
         </p>
 
         <div className="relative flex gap-4 mt-8 mb-auto">
@@ -198,11 +205,7 @@ function BentoGrid() {
           target="_blank"
           className="flex flex-col w-full mt-4"
         >
-          <FancyButtonAlt
-            icon={<RiChatSmile3Line />}
-            title="Get in touch"
-            link="https://www.fiverr.com/users/chrysyt"
-          />
+          <FancyButtonAlt icon={<RiChatSmile3Line />} title="Get in touch" />
         </Link>
       </div>
 
@@ -219,7 +222,12 @@ function BentoGrid() {
           }}
         ></div>
 
-        <Link download href="" className="flex flex-col mt-auto">
+        <Link
+          target="_blank"
+          href="/resume.pdf"
+          download={true}
+          className="flex flex-col mt-auto"
+        >
           <FancyButtonAlt icon={<PiFilePdfFill />} title="Download" />
         </Link>
       </div>

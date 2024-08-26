@@ -50,7 +50,7 @@ function About() {
         </span>
       </div>
 
-      <div className="relative min-h-[60vh] md:min-h-fit md:flex mt-[300px] md:mt-0 flex-1 mx-auto lg:ml-auto items-center justify-center lg:gap-8 md:px-2 w-full">
+      <div className="relative min-h-[60vh] md:min-h-fit md:flex mt-[250px] md:mt-0 flex-1 mx-auto lg:ml-auto items-center justify-center lg:gap-8 md:px-2 w-full">
         <AboutCard detailsCard={false}>
           <Image
             height={100}

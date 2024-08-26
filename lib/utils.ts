@@ -205,24 +205,24 @@ export const projects = [
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
   },
   {
-    title: "Infinity Studios",
+    title: "Zenchat",
     techs: [
       "/StackLogos/next.png",
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/movilla.png",
+    thumbnail: "/ProjectThumbnails/z-chat.png",
     description:
-      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+      "chat app",
   },
   {
-    title: "Infinity-Reads Club",
+    title: "Infinity-Readers Club",
     techs: [
       "/StackLogos/next.png",
       "/StackLogos/tailwind.png",
       "/StackLogos/sass.png",
     ],
-    thumbnail: "/ProjectThumbnails/movilla.png",
+    thumbnail: "/ProjectThumbnails/e-book.png",
     description:
       "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
   },

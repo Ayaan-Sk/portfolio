@@ -17,7 +17,7 @@ function Projects() {
       </div>
 
       <div className="relative flex items-center w-full h-[50vh] md:h-[70vh] lg:h-[80vh] translate-y-[-20px] overflow-hidden">
-        <div className="absolute overflow-hidden left-0 w-full h-full before:absolute before:content-[''] before:top-0 before:left-[50%] before:-translate-x-[50%] before:w-[110%] before:h-[30%] before:rounded-[100%] before:translate-y-[-70%] before:bg-[#09130f] before:z-10 after:absolute after:content-[''] after:bottom-0 after:left-[50%] after:-translate-x-[50%] after:w-[110%] after:h-[30%] after:rounded-[100%] after:translate-y-[70%] after:bg-[#09130f] after:z-10"></div>
+        <div className="absolute overflow-hidden left-0 w-full h-full before:absolute before:content-[''] before:top-[-1px] before:left-[50%] before:-translate-x-[50%] before:w-[110%] before:h-[30%] before:rounded-[100%] before:translate-y-[-70%] before:bg-[#09130f] before:z-10 after:absolute after:content-[''] after:bottom-[-1px] after:left-[50%] after:-translate-x-[50%] after:w-[110%] after:h-[30%] after:rounded-[100%] after:translate-y-[70%] after:bg-[#09130f] after:z-10"></div>
 
         <div
           className="relative flex items-center w-full h-full gap-[5%] overflow-x-scroll"
