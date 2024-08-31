@@ -13,7 +13,7 @@ function Projects() {
         <span className={`opacity-80 font-normal ${morona.className}`}>
           collection of my
         </span>
-        <h1 className={`text-3xl md:text-4xl font-medium`}>recent projects</h1>
+        <h1 className={`text-4xl md:text-4xl font-medium`}>recent projects</h1>
       </div>
 
       <div className="relative flex items-center w-full h-[50vh] md:h-[70vh] lg:h-[80vh] translate-y-[-20px] overflow-hidden">
@@ -34,16 +34,16 @@ function Projects() {
             >
               <Link href="https://github.com/creativeambition" target="_blank">
                 <div
-                  className={`group relative flex items-center gap-4 text-3xl md:text-5xl lg:text-6xl text-black/[80%] font-bold ${montserrat_alternates.className} font-bold`}
+                  className={`group relative flex items-center gap-2 md:gap-4 text-2xl md:text-5xl lg:text-6xl text-black/[80%] font-bold ${montserrat_alternates.className} font-bold`}
                 >
                   {project.title}
-                  <div className="size-[30px] text-3xl group-hover:translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-[35deg] transition-transform">
+                  <div className="size-[20px] md:size-[30px] text-xl md:text-2xl group-hover:translate-x-3 group-hover:-translate-y-3 group-hover:-rotate-[35deg] transition-transform">
                     <FaArrowRightLong />
                   </div>
                 </div>
               </Link>
 
-              <span className="text-base text-black/[80%] mt-2 max-w-[95%] md:max-w-[65%] lg:max-w-[28%] text-center font-medium">
+              <span className="text-base text-black/[80%] mt-2 max-w-[90%] md:max-w-[65%] lg:max-w-[28%] text-center font-medium">
                 {project.description}
               </span>
 

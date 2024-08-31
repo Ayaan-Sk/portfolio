@@ -13,17 +13,17 @@ function About() {
   return (
     <div
       id="about"
-      className="relative flex flex-col w-screen md:max-lg:h-screen lg:h-[80vh] xl:h-[90vh] px-2 py-16 pb-0 lg:flex-row md:px-[50px] lg:px-[40px] xl:px-[100px] xl:pl-[80px] 2xl:px-[180px] 2xl:pl-[180px] gap-8 md:gap-0"
+      className="relative flex flex-col w-screen md:max-lg:h-screen lg:h-[80vh] xl:h-[90vh] px-4 py-16 pb-0 lg:flex-row md:px-[50px] lg:px-[40px] xl:px-[100px] xl:pl-[80px] 2xl:px-[180px] 2xl:pl-[180px] gap-8 md:gap-0"
     >
       <div className={`flex md:flex-1 flex-col items-center md:items-start`}>
         <div className="flex flex-1 w-full gap-4">
           <div className="w-[2px] h-full bg-slate-200 rounded-lg ml-4"></div>
 
-          <div className={`hidden sm:flex flex-col mt-6`}>
+          <div className={`hidden sm:flex flex-col mt-2 gap-2`}>
             <h2
               className={`${montserrat_alternates.className} text-xl font-medium`}
             >
-              Quick Tip:
+              ⏳Quick history lesson you didn&apos;t ask for;<br /> but I&apos;ll still say it anyways:
             </h2>
             <span className={`${poppins.className} max-w-[70%]`}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
@@ -65,7 +65,7 @@ function About() {
           detailsCard={true}
           className="details-card top-[40%] right-0 md:top-auto"
         >
-          <span className="text-[#61cc9c] font-semibold text-base md:text-2xl">
+          <span className="text-[#61cc9c] font-semibold text-xl md:text-2xl">
             # Dev-101
           </span>
 

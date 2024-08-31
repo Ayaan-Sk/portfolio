@@ -12,7 +12,7 @@ import Link from "next/link";
 function BentoGrid() {
   return (
     <div className="flex flex-col md:grid md:grid-cols-6 md:grid-rows-2 xl:grid-rows-3 w-full flex-1 gap-4">
-      <div className="relative flex flex-col items-center p-4 min-h-[250px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2">
+      <div className="relative flex flex-col items-center p-4 min-h-[250px] border border-white/[25%] bg-black/[20%] backdrop-blur-md col-span-2">
         <CardCorners />
         <h1 className={`${montserrat_alternates.className} font-semibold`}>
           Address
@@ -33,7 +33,7 @@ function BentoGrid() {
       </div>
 
       <div
-        className={`flex flex-col items-center p-4 relative min-h-[250px] border border-white/[50%] bg-black/[20%] backdrop-blur-md col-span-2`}
+        className={`flex flex-col items-center p-4 relative min-h-[250px] border border-white/[25%] bg-black/[20%] backdrop-blur-md col-span-2`}
       >
         <CardCorners />
         <h1 className={`${montserrat_alternates.className} font-semibold`}>
@@ -58,7 +58,7 @@ function BentoGrid() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-start items-start p-4 relative min-h-[250px] border bg-black/[20%] border-white/[50%] col-span-2 gap-8">
+      <div className="flex flex-col justify-start items-start p-4 relative min-h-[250px] border bg-black/[20%] border-white/[25%] col-span-2 gap-8">
         <CardCorners />
         <InteractiveGradientBg />
 
@@ -113,7 +113,7 @@ function BentoGrid() {
         </div>
       </div>
 
-      <div className="relative flex flex-col items-center justify-center p-4 min-h-[250px] border bg-black/[20%] border-white/[50%] xl:row-span-2 col-span-3">
+      <div className="relative flex flex-col items-center justify-center p-4 min-h-[250px] border bg-black/[20%] border-white/[25%] xl:row-span-2 col-span-3">
         <CardCorners />
         <InteractiveGradientBg />
 
@@ -174,7 +174,7 @@ function BentoGrid() {
         </span>
       </div>
 
-      <div className="flex flex-col items-center p-4 relative min-h-[250px] border border-white/[50%] xl:row-span-2 col-span-3 xl:col-span-2 bg-black/[20%] backdrop-blur-md">
+      <div className="flex flex-col items-center p-4 relative min-h-[250px] border border-white/[25%] xl:row-span-2 col-span-3 xl:col-span-2 bg-black/[20%] backdrop-blur-md">
         <CardCorners />
 
         <span className="mb-4">
@@ -187,7 +187,7 @@ function BentoGrid() {
         </div>
       </div>
 
-      <div className="flex justify-center md:hidden p-4 xl:flex flex-col relative min-h-[250px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
+      <div className="flex justify-center md:hidden p-4 xl:flex flex-col relative min-h-[250px] border border-white/[25%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
         <span className="text-center mx-auto self-center">
           Freelance Software Developer{" "}
@@ -217,7 +217,7 @@ function BentoGrid() {
         {/* </Link> */}
       </div>
 
-      <div className="hidden justify-center p-4 xl:flex flex-col relative min-h-[250px] border border-white/[50%] bg-black/[20%] backdrop-blur-md">
+      <div className="hidden justify-center p-4 xl:flex flex-col relative min-h-[250px] border border-white/[25%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
         <h1 className="mx-auto">Download Resume</h1>
         <div

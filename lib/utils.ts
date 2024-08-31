@@ -20,8 +20,6 @@ export const navItems = [
   },
 ];
 
-export const foo = ["Full-Stack Developer", "3D Artist", "Mobile Developer"]
-
 export const contacts = [
   {
     name: "Mail",
@@ -169,7 +167,12 @@ export const otherSkills = [
 export const projects = [
   {
     title: "La Ultimate Collection",
-    techs: ["/StackLogos/astro.png", "/StackLogos/sass.png"],
+        techs: [
+            "/StackLogos/astro.png",
+            "/StackLogos/sass.png",
+            "/StackLogos/next.png",
+            "/StackLogos/supabase.png"
+        ],
     thumbnail: "/ProjectThumbnails/LUC.png",
     description: "E-Commerce App",
   },
@@ -181,7 +184,7 @@ export const projects = [
       "/StackLogos/firebase.png",
     ],
     thumbnail: "/ProjectThumbnails/movilla.png",
-    description: "movie streaming web-app featuring TMDB",
+    description: "Movie/TV streaming web-app featuring TMDB",
   },
   {
     title: "Revo.Wallet",
@@ -196,13 +199,12 @@ export const projects = [
   {
     title: "Omini",
     techs: [
-      "/StackLogos/next.png",
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
     ],
     thumbnail: "/ProjectThumbnails/omini.png",
     description:
-      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+      "GPT-4o LLM - Landing Page",
   },
   {
     title: "Zenchat",
@@ -210,6 +212,7 @@ export const projects = [
       "/StackLogos/next.png",
       "/StackLogos/react.png",
       "/StackLogos/sass.png",
+      "/StackLogos/firebase.png",
     ],
     thumbnail: "/ProjectThumbnails/z-chat.png",
     description:
@@ -218,12 +221,13 @@ export const projects = [
   {
     title: "Infinity-Readers Club",
     techs: [
-      "/StackLogos/next.png",
-      "/StackLogos/tailwind.png",
+      "/StackLogos/solidjs.png",
       "/StackLogos/sass.png",
+      "/StackLogos/supabase.png",
+      "/StackLogos/firebase.png",
     ],
     thumbnail: "/ProjectThumbnails/e-book.png",
     description:
-      "sit amet consectetur adipisicing elit. Blanditiis omnis minima beatae rem ipsam dolor?",
+      "E-book web-app",
   },
 ];

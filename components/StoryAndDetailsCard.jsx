@@ -57,7 +57,7 @@ const StoryAndDetailsCard = () => {
       </h2>
 
       {showStory ? (
-        <p className="text-sm md:text-base tracking-wide">
+        <p className="text-md md:text-base tracking-wide">
           I&apos;ve always been fascinated by technology and software
           development.{" "}
           <i className="text-[#61cc9c]">
@@ -77,7 +77,7 @@ const StoryAndDetailsCard = () => {
           </i>
         </p>
       ) : (
-        <div className="text-sm md:text-base flex flex-col gap-2 tracking-wide">
+        <div className="text-md md:text-base flex flex-col gap-2 tracking-wide">
           <h2>
             name ~{" "}
             <i className="font-medium text-[#61cc9c]">Chrysoprase Ayita</i>

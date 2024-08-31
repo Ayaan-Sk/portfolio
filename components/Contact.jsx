@@ -39,17 +39,20 @@ function Contact() {
 
       <div className="w-screen mt-auto flex flex-col items-center justify-center">
         <div className="flex flex-wrap gap-12 md:gap-8 justify-center content-center">
-          {contacts.map((contact) => (
-            <Link
-              key={contact.name}
-              href={contact.link}
-              target="_blank"
-              className="group flex items-center cursor-pointer opacity-40 hover:opacity-100"
-            >
-              <span className="">{contact.name}</span>
-              <BsArrowRight className="opacity-0 group-hover:opacity-100 group-hover:translate-x-2 group-hover:-translate-y-1 group-hover:-rotate-[35deg] transition-all" />
-            </Link>
-          ))}
+                  {contacts.map((contact) => {
+                      let cn = (contact.name == "Mail" || contact.name == "Fiverr") ? "hidden md:flex" : "flex"
+                      return (
+                          <Link
+                              key={contact.name}
+                              href={contact.link}
+                              target="_blank"
+                              className={`group ${cn} items-center cursor-pointer opacity-40 hover:opacity-100`}
+                          >
+                              <span className="">{contact.name}</span>
+                              <BsArrowRight className="opacity-0 group-hover:opacity-100 group-hover:translate-x-2 group-hover:-translate-y-1 group-hover:-rotate-[35deg] transition-all" />
+                          </Link>
+                      )
+                  })}
         </div>
       </div>
 
