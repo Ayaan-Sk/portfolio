@@ -41,19 +41,19 @@ const StoryAndDetailsCard = () => {
   }
 
   return (
-    <div className={`flex flex-1 flex-col mt-4 gap-2 w-full z-50`}>
+    <div className={`flex flex-1 flex-col mt-1 md:mt-4 gap-2 w-full z-50`}>
       <h2 className="font-semibold">
         {showStory ? (
           <>
-            My Story{" "}
+            How it all started{" "}
             <i className="text-[#61cc9c]">
-              {"{"} brace yourself ! {"}"}
+              {"{"} story time! {"}"}
             </i>
           </>
         ) : (
           "Profile"
         )}
-        <hr className="mt-3" />
+        <hr className="mt-2 md:mt-3" />
       </h2>
 
       {showStory ? (

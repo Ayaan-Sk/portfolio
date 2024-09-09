@@ -7,7 +7,7 @@ function AboutCard({ detailsCard, children, className }) {
 
   return (
     <div
-          className={`absolute w-[75%] h-[450px] md:w-[350px] md:h-[500px] md:-skew-x-12 flex flex-col items-start justify-start p-4 bg-black/[60%] border border-white/[25%] ${transformClass} ${className}`}
+      className={`absolute w-[85%] h-[450px] md:w-[350px] md:h-[500px] md:-skew-x-12 flex flex-col items-start justify-start p-4 bg-black/[60%] border border-white/[25%] ${transformClass} ${className}`}
     >
       <CardCorners />
 

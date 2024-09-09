@@ -23,11 +23,11 @@ function About() {
             <h2
               className={`${montserrat_alternates.className} text-xl font-medium`}
             >
-              ⏳Quick history lesson you didn&apos;t ask for;<br /> but I&apos;ll still say it anyways:
+              Did you know?
             </h2>
             <span className={`${poppins.className} max-w-[70%]`}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-              eligendi beatae repellendus sint in eos!
+              The first Apple logo featured Sir Isaac Newton sitting under an
+              apple tree!
             </span>
           </div>
         </div>
@@ -65,7 +65,7 @@ function About() {
           detailsCard={true}
           className="details-card top-[40%] right-0 md:top-auto"
         >
-          <span className="text-[#61cc9c] font-semibold text-xl md:text-2xl">
+          <span className="text-[#61cc9c] font-semibold text-lg md:text-2xl">
             # Dev-101
           </span>
 
