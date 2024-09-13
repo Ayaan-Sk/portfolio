@@ -8,6 +8,7 @@ import AboutCard from "@/components/ui/AboutCard";
 import Image from "next/image";
 import StoryAndDetailsCard from "@/components/StoryAndDetailsCard";
 import me from "@/public/me.jpg";
+import UselessFacts from "@/components/UselessFacts";
 
 function About() {
   return (
@@ -20,15 +21,13 @@ function About() {
           <div className="w-[2px] h-full bg-slate-200 rounded-lg ml-4"></div>
 
           <div className={`hidden sm:flex flex-col mt-2 gap-2`}>
-            <h2
-              className={`${montserrat_alternates.className} text-xl font-medium`}
-            >
-              Did you know?
+            <h2 className={`text-lg font-medium`}>
+              Did you know ?{" "}
+              <i className="text-[#61cc9c]">
+                {"{"} Useless, but true facts {"}"}
+              </i>
             </h2>
-            <span className={`${poppins.className} max-w-[70%]`}>
-              The first Apple logo featured Sir Isaac Newton sitting under an
-              apple tree!
-            </span>
+            <UselessFacts />
           </div>
         </div>
 
