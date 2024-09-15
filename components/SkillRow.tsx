@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function SkillRow({
   skills,
@@ -14,47 +14,43 @@ function SkillRow({
   const skillsRef = useRef(null);
   const skillCardsRef = useRef([]);
 
-  const animationPlayState = useCallback(() => {
-    if (!skillsRef.current) return;
-
-    const skillsBounds = skillsRef.current.getBoundingClientRect();
-    const isOutOfViewport =
-      skillsBounds.top > window.innerHeight + Number(window.innerHeight / 3) ||
-      skillsBounds.bottom < 0;
-    const newPlayState = isOutOfViewport ? "paused" : "running";
-
-    skillCardsRef.current.forEach((card) => {
-      if (card) card.style.animationPlayState = newPlayState;
-    });
-  }, []);
-
   useEffect(() => {
     skillsRef.current = document.querySelector("#skills");
     skillCardsRef.current = Array.from(
       document.querySelectorAll("#skill-element")
     );
 
-    let animationFrameId: number;
-    const animationFrame = () => {
-      animationPlayState();
-      animationFrameId = requestAnimationFrame(animationFrame);
+    const options = {
+      root: null,
+      threshold: 0,
     };
-    requestAnimationFrame(animationFrame);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const playState = entry.isIntersecting ? "running" : "paused";
+
+        skillCardsRef.current.forEach((card) => {
+          card.style.animationPlayState = playState;
+        });
+      });
+    }, options);
+
+    observer.observe(skillsRef.current);
 
     return () => {
-      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+      if (skillsRef.current) observer.unobserve(skillsRef.current);
     };
-  }, [animationPlayState]);
-
-  function checkBreakpoint() {
-    if (window.innerWidth > 768) {
-      setMdBreakPoint(true);
-    } else {
-      setMdBreakPoint(false);
-    }
-  }
+  }, []);
 
   useEffect(() => {
+    function checkBreakpoint() {
+      if (window.innerWidth > 768) {
+        setMdBreakPoint(true);
+      } else {
+        setMdBreakPoint(false);
+      }
+    }
+
     checkBreakpoint();
   });
 
