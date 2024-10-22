@@ -44,8 +44,9 @@ function About() {
         <span
           className={`text-base md:text-xl ${montserrat_alternates.className}`}
         >
-          Full-Stack <b className="text-[#61cc9c]">Ctrl + C </b> De
-          <b className="text-[#61cc9c]">V</b>eloper 😎
+          Full-Stack <code className="text-[#61cc9c]">Ctrl + C </code>
+          De
+          <code className="text-[#61cc9c]"> V </code>eloper 😎
         </span>
       </div>
 

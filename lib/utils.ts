@@ -39,7 +39,7 @@ export const contacts = [
   },
   {
     name: "Facebook",
-    link: "https://facebook.com/chrysYT",
+    link: "https://web.facebook.com/share/g/NY81ZaaMtJ6qrrPm/",
   },
 ];
 
@@ -67,7 +67,7 @@ export const socials = [
   {
     name: "Facebook",
     Icon: FaFacebook,
-    link: "https://facebook.com/@creative_ambition/",
+    link: "https://web.facebook.com/share/g/NY81ZaaMtJ6qrrPm/",
   },
 ];
 
