@@ -1,6 +1,6 @@
-import { poiret_one, sacramento } from "@/lib/fonts";
+import { poiret_one } from "@/lib/fonts";
 import PlaceholderTextAnimation from "./ui/PlaceholderTextAnimation";
-import { contacts, socials } from "@/lib/utils";
+import { contacts } from "@/lib/utils";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 
@@ -62,7 +62,7 @@ function Contact() {
       <footer
         className={`${poiret_one.className} mt-auto w-full flex justify-center gap-2 opacity-[70%]`}
       >
-        &copy;<span>infinity studios, 2024</span>
+        &copy;<span>infinity studios, 2025</span>
       </footer>
     </div>
   );

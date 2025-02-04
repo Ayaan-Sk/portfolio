@@ -24,7 +24,7 @@ function BentoGrid() {
         <div
           className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: "url('/illustration-alt.png')",
+            backgroundImage: "url('/assets/illustration-alt.png')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
@@ -49,7 +49,7 @@ function BentoGrid() {
           <div
             className="absolute inset-0 opacity-10"
             style={{
-              backgroundImage: "url('/address-illustration.png')",
+              backgroundImage: "url('/assets/address-illustration.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -196,25 +196,17 @@ function BentoGrid() {
         <div
           className="h-[70px] my-auto"
           style={{
-            backgroundImage: "url('/contact/fiverr.png')",
+            backgroundImage: "url('/assets/contact/fiverr.png')",
             backgroundSize: "contain",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         ></div>
-
-        {/* <Link
-          href={"https://www.fiverr.com/users/chrysyt"}
-          target="_blank"
-          className="mt-4"
-        > */}
         <FancyButtonAlt
           link="https://www.fiverr.com/users/chrysyt"
           icon={<RiChatSmile3Line />}
           title="Get in touch"
         />
-
-        {/* </Link> */}
       </div>
 
       <div className="hidden justify-center p-4 xl:flex flex-col relative min-h-[250px] border border-white/[25%] bg-black/[20%] backdrop-blur-md">
@@ -223,7 +215,7 @@ function BentoGrid() {
         <div
           className="flex-1 w-[65%] mt-1 mb-0 mx-auto"
           style={{
-            backgroundImage: "url('/res_illustration.png')",
+            backgroundImage: "url('/assets/res_illustration.png')",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "top",

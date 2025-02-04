@@ -74,160 +74,154 @@ export const socials = [
 export const FrontEndSkills = [
   {
     name: "React",
-    img: "/StackLogos/react.png",
+    img: "/assets/StackLogos/react.png",
   },
   {
     name: "Sass",
-    img: "/StackLogos/sass.png",
+    img: "/assets/StackLogos/sass.png",
   },
   {
     name: "Figma",
-    img: "/StackLogos/figma.png",
+    img: "/assets/StackLogos/figma.png",
   },
   {
     name: "Tailwind",
-    img: "/StackLogos/tailwind.png",
+    img: "/assets/StackLogos/tailwind.png",
   },
   {
     name: "Solid",
-    img: "/StackLogos/solidjs.png",
+    img: "/assets/StackLogos/solidjs.png",
   },
   {
     name: "Astro",
-    img: "/StackLogos/astro.png",
+    img: "/assets/StackLogos/astro.png",
   },
 ];
 export const BackEndSkills = [
   {
     name: "Node",
-    img: "/StackLogos/node.png",
+    img: "/assets/StackLogos/node.png",
   },
   {
     name: "Express",
-    img: "/StackLogos/express.png",
+    img: "/assets/StackLogos/express.png",
   },
   {
     name: "Next",
-    img: "/StackLogos/next.png",
+    img: "/assets/StackLogos/next.png",
   },
   {
     name: "Firebase",
-    img: "/StackLogos/firebase.png",
+    img: "/assets/StackLogos/firebase.png",
   },
   {
     name: "Strapi",
-    img: "/StackLogos/strapi.png",
+    img: "/assets/StackLogos/strapi.png",
   },
 ];
 export const dbSkills = [
   {
     name: "Postgres",
-    img: "/StackLogos/postgres.png",
+    img: "/assets/StackLogos/postgres.png",
   },
   {
     name: "MySQL",
-    img: "/StackLogos/mysql.png",
+    img: "/assets/StackLogos/mysql.png",
   },
   {
     name: "Mongo DB",
-    img: "/StackLogos/mongo.png",
+    img: "/assets/StackLogos/mongo.png",
   },
   {
     name: "Cloud Firestore",
-    img: "/StackLogos/firestore.png",
+    img: "/assets/StackLogos/firestore.png",
   },
   {
     name: "Supabase",
-    img: "/StackLogos/supabase.png",
+    img: "/assets/StackLogos/supabase.png",
   },
 ];
 export const otherSkills = [
   {
     name: "Git",
-    img: "/StackLogos/git.png",
+    img: "/assets/StackLogos/git.png",
   },
   {
     name: "AWS",
-    img: "/StackLogos/aws.png",
+    img: "/assets/StackLogos/aws.png",
   },
   {
     name: "Google Cloud",
-    img: "/StackLogos/gcp.png",
+    img: "/assets/StackLogos/gcp.png",
   },
   {
     name: "Spline 3D",
-    img: "/StackLogos/spline.png",
+    img: "/assets/StackLogos/spline.png",
   },
   {
     name: "Photoshop",
-    img: "/StackLogos/photoshop.png",
+    img: "/assets/StackLogos/photoshop.png",
   },
 ];
 
 export const projects = [
   {
     title: "La Ultimate Collection",
-        techs: [
-            "/StackLogos/astro.png",
-            "/StackLogos/sass.png",
-            "/StackLogos/next.png",
-            "/StackLogos/supabase.png"
-        ],
-    thumbnail: "/ProjectThumbnails/LUC.png",
+    techs: [
+      "/assets/StackLogos/astro.png",
+      "/assets/StackLogos/sass.png",
+      "/assets/StackLogos/next.png",
+      "/assets/StackLogos/supabase.png",
+    ],
+    thumbnail: "/assets/ProjectThumbnails/LUC.png",
     description: "E-Commerce App",
   },
   {
     title: "Movilla",
     techs: [
-      "/StackLogos/react.png",
-      "/StackLogos/sass.png",
-      "/StackLogos/firebase.png",
+      "/assets/StackLogos/react.png",
+      "/assets/StackLogos/sass.png",
+      "/assets/StackLogos/firebase.png",
     ],
-    thumbnail: "/ProjectThumbnails/movilla.png",
+    thumbnail: "/assets/ProjectThumbnails/movilla.png",
     description: "Movie/TV streaming web-app featuring TMDB",
   },
   {
     title: "Revo.Wallet",
     techs: [
-      "/StackLogos/html.png",
-      "/StackLogos/sass.png",
-      "/StackLogos/js.png",
+      "/assets/StackLogos/html.png",
+      "/assets/StackLogos/sass.png",
+      "/assets/StackLogos/js.png",
     ],
-    thumbnail: "/ProjectThumbnails/revo.png",
+    thumbnail: "/assets/ProjectThumbnails/revo.png",
     description: "FinTech SaaS Landing Page",
   },
   {
     title: "Omini",
-    techs: [
-      "/StackLogos/react.png",
-      "/StackLogos/sass.png",
-    ],
-    thumbnail: "/ProjectThumbnails/omini.png",
-    description:
-      "GPT-4o LLM - Landing Page",
+    techs: ["/assets/StackLogos/react.png", "/assets/StackLogos/sass.png"],
+    thumbnail: "/assets/ProjectThumbnails/omini.png",
+    description: "GPT-4o LLM - Landing Page",
   },
   {
     title: "Zenchat",
     techs: [
-      "/StackLogos/next.png",
-      "/StackLogos/react.png",
-      "/StackLogos/sass.png",
-      "/StackLogos/firebase.png",
+      "/assets/StackLogos/next.png",
+      "/assets/StackLogos/react.png",
+      "/assets/StackLogos/sass.png",
+      "/assets/StackLogos/firebase.png",
     ],
-    thumbnail: "/ProjectThumbnails/z-chat.png",
-    description:
-      "chat app",
+    thumbnail: "/assets/ProjectThumbnails/z-chat.png",
+    description: "chat app",
   },
   {
     title: "Infinity-Readers Club",
     techs: [
-      "/StackLogos/solidjs.png",
-      "/StackLogos/sass.png",
-      "/StackLogos/supabase.png",
-      "/StackLogos/firebase.png",
+      "/assets/StackLogos/solidjs.png",
+      "/assets/StackLogos/sass.png",
+      "/assets/StackLogos/supabase.png",
+      "/assets/StackLogos/firebase.png",
     ],
-    thumbnail: "/ProjectThumbnails/e-book.png",
-    description:
-      "E-book web-app",
+    thumbnail: "/assets/ProjectThumbnails/e-book.png",
+    description: "E-book web-app",
   },
 ];

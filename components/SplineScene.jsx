@@ -1,7 +1,7 @@
 import { sacramento } from "@/lib/fonts";
 import Spline from "@splinetool/react-spline/next";
 import Image from "next/image";
-import NoodleArrow from "@/public/noodle_arrow.svg";
+import NoodleArrow from "@/public/assets/noodle_arrow.svg";
 
 export default function SplineScene() {
   return (

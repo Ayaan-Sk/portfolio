@@ -4,6 +4,8 @@ import { useState } from "react";
 
 const UselessFacts = () => {
   const [fact, setFact] = useState({});
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
@@ -11,12 +13,24 @@ const UselessFacts = () => {
       .then((data) => {
         const parsedData = JSON.parse(data);
         setFact(parsedData);
-      });
+      })
+      .catch((error) => {
+        setError(true);
+      })
+      .finally(setLoading(false));
   }, []);
 
   return (
     <p className={``}>
-      {fact.text ? fact.text : <i className="text-gray-400">loading...</i>}
+      {loading && <i className="text-gray-400">Loading...</i>}
+      {fact.text && fact.text}
+      {error && (
+        <i className="text-gray-400">
+          Oops! something went wrong
+          <br />
+          Check your connection and try again :)
+        </i>
+      )}
     </p>
   );
 };

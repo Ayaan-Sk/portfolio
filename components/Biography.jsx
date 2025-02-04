@@ -19,7 +19,7 @@ function Biography() {
           <div
             className="h-full w-full rounded-full border border-white/[40%]"
             style={{
-              backgroundImage: "url('/profile.jpg')",
+              backgroundImage: "url('/assets/profile.jpg')",
               backgroundSize: "120%",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",

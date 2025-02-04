@@ -1,5 +1,6 @@
 import { montserrat_alternates, morona } from "@/lib/fonts";
 import { projects } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -77,6 +78,14 @@ function Projects() {
           <div></div>
         </div>
       </div>
+
+      <Image
+        className="size-16 rounded-full left-[50%] -translate-x-[50%] top-[80%] lg:top-[85%] absolute z-10 bg-blend-overlay"
+        width={10}
+        height={10}
+        src="/assets/misc/scroll.gif"
+        alt="scroll-gif"
+      />
     </div>
   );
 }
