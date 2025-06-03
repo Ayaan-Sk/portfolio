@@ -79,13 +79,9 @@ function Projects() {
         </div>
       </div>
 
-      <Image
-        className="size-16 rounded-full left-[50%] -translate-x-[50%] top-[80%] lg:top-[85%] absolute z-10 bg-blend-overlay"
-        width={10}
-        height={10}
-        src="/assets/misc/scroll.gif"
-        alt="scroll-gif"
-      />
+      <div className="absolute size-12 left-[50%] -translate-x-[50%] bottom-28 z-50 animate-pulse">
+        <CgScrollH className="size-12" />
+      </div>
     </div>
   );
 }
