@@ -1,6 +1,6 @@
 import { montserrat_alternates, morona } from "@/lib/fonts";
 import { projects } from "@/lib/utils";
-import Image from "next/image";
+import { CgScrollH } from "react-icons/cg";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
