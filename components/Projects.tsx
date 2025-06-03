@@ -79,7 +79,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="absolute size-12 left-[50%] -translate-x-[50%] bottom-28 z-50 animate-pulse">
+      <div className="absolute size-12 left-[50%] -translate-x-[50%] bottom-28 z-10 animate-pulse">
         <CgScrollH className="size-12" />
       </div>
     </div>
