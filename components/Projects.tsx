@@ -1,6 +1,5 @@
 import { montserrat_alternates, morona } from "@/lib/fonts";
 import { projects } from "@/lib/utils";
-import { CgScrollH } from "react-icons/cg";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -79,11 +78,32 @@ function Projects() {
         </div>
       </div>
 
-      <div className="absolute size-12 left-[50%] -translate-x-[50%] bottom-28 z-10 animate-pulse">
-        <CgScrollH className="size-12" />
-      </div>
+      <HScrollIndicator />
     </div>
   );
 }
 
 export default Projects;
+
+function HScrollIndicator() {
+  return (
+    <div className="absolute bottom-20 flex flex-col items-center gap-4 mt-4 select-none pointer-events-none">
+      <div className="flex items-center gap-3">
+        <div className="h-[1px] w-16 bg-gradient-to-r from-transparent via-[#61cc9c] to-transparent animate-slide-right" />
+        <span className="text-xs uppercase tracking-wider text-white/60">
+          scroll
+        </span>
+        <div className="h-[1px] w-16 bg-gradient-to-r from-transparent via-[#61cc9c] to-transparent animate-slide-left" />
+      </div>
+      <div className="flex gap-2">
+        {[0, 1, 2].map((i) => (
+          <div
+            key={i}
+            className="h-1.5 w-1.5 rounded-full bg-[#61cc9c]/30 animate-pulse"
+            style={{ animationDelay: `${i * 200}ms` }}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
