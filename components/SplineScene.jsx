@@ -1,7 +1,13 @@
 import { sacramento } from "@/lib/fonts";
-import Spline from "@splinetool/react-spline/next";
 import Image from "next/image";
 import NoodleArrow from "@/public/assets/noodle_arrow.svg";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const SplineComponent = dynamic(() => import("@splinetool/react-spline/next"), {
+  ssr: false,
+  loading: null,
+});
 
 export default function SplineScene() {
   return (
@@ -21,7 +27,9 @@ export default function SplineScene() {
         />
       </div>
 
-      <Spline scene="https://prod.spline.design/YTurGkXAz-yWLxOO/scene.splinecode" />
+      <Suspense fallback={null}>
+        <SplineComponent scene="https://prod.spline.design/YTurGkXAz-yWLxOO/scene.splinecode" />
+      </Suspense>
     </div>
   );
 }
