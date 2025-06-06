@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 
-function SkillRow({
+const SkillRow = memo(function SkillRow({
   skills,
   reverse,
 }: {
@@ -15,44 +15,38 @@ function SkillRow({
   const skillCardsRef = useRef([]);
 
   useEffect(() => {
-    skillsRef.current = document.querySelector("#skills");
-    skillCardsRef.current = Array.from(
-      document.querySelectorAll("#skill-element")
-    );
-
     const options = {
       root: null,
       threshold: 0,
+      rootMargin: "50px",
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
+        const cards = entry.target.querySelectorAll("#skill-element");
         const playState = entry.isIntersecting ? "running" : "paused";
 
-        skillCardsRef.current.forEach((card) => {
-          card.style.animationPlayState = playState;
+        cards.forEach((card) => {
+          (card as HTMLElement).style.animationPlayState = playState;
         });
       });
     }, options);
 
-    observer.observe(skillsRef.current);
+    const skillsElement = document.querySelector("#skills");
+    if (skillsElement) observer.observe(skillsElement);
 
-    return () => {
-      if (skillsRef.current) observer.unobserve(skillsRef.current);
-    };
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    function checkBreakpoint() {
-      if (window.innerWidth > 768) {
-        setMdBreakPoint(true);
-      } else {
-        setMdBreakPoint(false);
-      }
-    }
+    const resizeObserver = new ResizeObserver((entries) => {
+      setMdBreakPoint(window.innerWidth > 768);
+    });
 
-    checkBreakpoint();
-  });
+    resizeObserver.observe(document.documentElement);
+
+    return () => resizeObserver.disconnect();
+  }, []);
 
   let width = mdBreakPoint
     ? `${skills.length * 250}px`
@@ -82,16 +76,18 @@ function SkillRow({
         >
           <Image
             src={skill.img}
-            alt="skill-logo"
+            alt={`${skill.name} logo`}
             height={100}
             width={100}
             className="absolute left-2 h-[80%] w-auto object-contain opacity-60"
+            loading="lazy"
+            sizes="(max-width: 768px) 150px, 250px"
           />
           <h1 className="z-10">{skill.name}</h1>
         </div>
       ))}
     </div>
   );
-}
+});
 
 export default SkillRow;
