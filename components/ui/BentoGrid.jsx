@@ -4,12 +4,44 @@ import { InteractiveGradientBg } from "@/components/ui/InteractiveGradientBg";
 import { FancyButtonAlt } from "./FancyButton";
 import { FaRegCopy } from "react-icons/fa6";
 import { socials } from "@/lib/utils";
-import Game from "../Game";
 import { PiFilePdfFill } from "react-icons/pi";
 import { RiChatSmile3Line } from "react-icons/ri";
 import Link from "next/link";
+import { memo, useMemo } from "react";
+import {
+  DynamicGame,
+  DynamicInteractiveGradientBg,
+} from "@/lib/dynamic-imports";
 
-function BentoGrid() {
+const techStack = {
+  primary: ["Solid", "React", "Next", "Node", "Express", "MongoDB"],
+  secondary: [
+    "Postgres",
+    "MySQL",
+    "Firebase",
+    "AWS",
+    "Google Cloud",
+    "Blender",
+  ],
+};
+
+const BentoGrid = memo(function BentoGrid() {
+  const renderTechStack = useMemo(
+    () => ({
+      primary: techStack.primary.map((item) => (
+        <div key={item} className="bg-black rounded-lg p-4 py-2 text-sm">
+          {item}
+        </div>
+      )),
+      secondary: techStack.secondary.map((item) => (
+        <div key={item} className="bg-black rounded-lg p-4 py-2 text-sm">
+          {item}
+        </div>
+      )),
+    }),
+    []
+  );
+
   return (
     <div className="flex flex-col md:grid md:grid-cols-6 md:grid-rows-2 xl:grid-rows-3 w-full flex-1 gap-4">
       <div className="relative flex flex-col items-center p-4 min-h-[250px] border border-white/[25%] bg-black/[20%] backdrop-blur-md col-span-2">
@@ -60,7 +92,7 @@ function BentoGrid() {
 
       <div className="flex flex-col justify-start items-start p-4 relative min-h-[250px] border bg-black/[20%] border-white/[25%] col-span-2 gap-8">
         <CardCorners />
-        <InteractiveGradientBg />
+        <DynamicInteractiveGradientBg />
 
         <h1
           className={`relative ${montserrat_alternates.className} whitespace-nowrap font-semibold`}
@@ -79,16 +111,7 @@ function BentoGrid() {
               maskImage: "radial-gradient(circle, black, transparent)",
             }}
           >
-            {["Solid", "React", "Next", "Node", "Express", "MongoDB"].map(
-              (item) => (
-                <div
-                  key={item}
-                  className="bg-black rounded-lg p-4 py-2 text-sm"
-                >
-                  {item}
-                </div>
-              )
-            )}
+            {renderTechStack.primary}
           </div>
 
           <div
@@ -97,18 +120,7 @@ function BentoGrid() {
               maskImage: "radial-gradient(circle, black, transparent)",
             }}
           >
-            {[
-              "Postgres",
-              "MySQL",
-              "Firebase",
-              "AWS",
-              "Google Cloud",
-              "Blender",
-            ].map((item) => (
-              <div key={item} className="bg-black rounded-lg p-4 py-2 text-sm">
-                {item}
-              </div>
-            ))}
+            {renderTechStack.secondary}
           </div>
         </div>
       </div>
@@ -183,7 +195,7 @@ function BentoGrid() {
         </span>
 
         <div className="relative my-auto w-full flex flex-col items-center">
-          <Game />
+          <DynamicGame />
         </div>
       </div>
 
@@ -233,6 +245,6 @@ function BentoGrid() {
       </div>
     </div>
   );
-}
+});
 
 export default BentoGrid;
