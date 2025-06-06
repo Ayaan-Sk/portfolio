@@ -4,7 +4,13 @@ import {
   dbSkills,
   otherSkills,
 } from "@/lib/utils";
-import SkillRow from "./SkillRow";
+
+import dynamic from "next/dynamic";
+
+const SkillRow = dynamic(() => import("./SkillRow"), {
+  ssr: true,
+  loading: null,
+});
 
 function TechnicalSkills() {
   return (
