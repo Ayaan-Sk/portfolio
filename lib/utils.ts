@@ -34,10 +34,6 @@ export const contacts = [
     link: "https://instagram.com/_creative_ambition",
   },
   {
-    name: "Whatsapp",
-    link: "https://wa.me/+233204255719",
-  },
-  {
     name: "Facebook",
     link: "https://web.facebook.com/share/g/NY81ZaaMtJ6qrrPm/",
   },
