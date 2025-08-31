@@ -9,6 +9,7 @@ import Projects from "@/components/Projects";
 import TechnicalSkills from "@/components/TechnicalSkills";
 import Contact from "@/components/Contact";
 import ScrollIndicator from "@/components/ui/ScrollIndicator";
+import AchievementsTimeline from "@/components/AchievementsTimeline";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <About />
       <Biography />
       <TechnicalSkills />
+      <AchievementsTimeline />
       <Projects />
       <Contact />
     </main>

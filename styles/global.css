@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 ::selection {
-  background-color: #61cc9c;
+  background-color: #617fcc;
   color: black;
 }
 
 body {
   color: #fffffff2;
-  background-color: #0f2018;
+  background-color: #0f1720;
 }
 
 ::-webkit-scrollbar {

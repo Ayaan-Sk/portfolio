@@ -34,7 +34,7 @@ function About() {
         <h1
           className={`${stretch.className} text-4xl mb-5 font-semibold md:text-6xl 2xl:text-7xl md:text-nowrap`}
         >
-          Chrys {"{ca.io}"}
+          Aya.an {"{Sheikh}"}
         </h1>
         <span
           className={`text-base md:text-xl ${montserrat_alternates.className}`}

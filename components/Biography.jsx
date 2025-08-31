@@ -14,7 +14,7 @@ function Biography() {
             WebkitTextStroke: "1px white",
           }}
         >
-          CHRYS
+          AYAAN
         </h1>
         <div className="size-[65px] md:size-[100px] md:min-w-[100px] lg:size-[150px] lg:min-w-[150px] rounded-full border-2 border-[#61cc9c] p-[3px] sm:p-[5px]">
       <div className="relative h-full w-full rounded-full border border-white/[40%] overflow-hidden">
@@ -34,7 +34,7 @@ function Biography() {
             WebkitTextStroke: "0.8px white",
           }}
         >
-          PRASE
+          SHEIKH
         </h1>
       </div>
 

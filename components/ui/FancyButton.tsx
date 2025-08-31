@@ -40,7 +40,7 @@ export function FancyButtonAlt({
 
     if (title == "Copy Email") {
       if (navigator.clipboard) {
-        navigator.clipboard.writeText("chrysayita@gmail.com");
+        navigator.clipboard.writeText("\ayaansheikh.dev@gmail.com");
         setEmailCopied(true);
       } else {
         alert("Cannot perform operation on this system");

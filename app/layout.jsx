@@ -3,7 +3,7 @@ import { poppins } from "@/lib/fonts";
 import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata = {
-  title: "ca~io",
+  title: "AyaanSheikh",
   description: "portfolio website",
 };
 

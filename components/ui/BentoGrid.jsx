@@ -50,7 +50,7 @@ const BentoGrid = memo(function BentoGrid() {
           Address
         </h1>
         <div className="flex flex-col items-center m-auto gap-2">
-          <h1 className="text-2xl font-bold">Ghana ~ Accra</h1>
+          <h1 className="text-2xl font-bold">Nagpur ~ India</h1>
           <span className="text-gray-400">Satellite</span>
         </div>
         <div
@@ -73,10 +73,10 @@ const BentoGrid = memo(function BentoGrid() {
         </h1>
         <div className="flex flex-col items-center m-auto gap-2">
           <h1 className={`text-2xl font-bold text-center`}>
-            BSc. Computer Science
+            B.Tech. Computer Science & Engineering
           </h1>
           <span className="text-center text-gray-400">
-            Ghana Communication Technology University
+            Anjuman College of Engineering and Technology
           </span>
           <div
             className="absolute inset-0 opacity-10"
@@ -159,7 +159,7 @@ const BentoGrid = memo(function BentoGrid() {
         <h1
           className={`relative ${poppins.className} text-2xl md:text-3xl lg:text-4xl font-semibold text-center`}
         >
-          @Creative Ambition
+          @AyaanSheikh
         </h1>
 
         <p className="relative max-w-[90%] md:max-w-[80%] lg:max-w-[70%] text-center mt-4 mb-2">
@@ -182,7 +182,7 @@ const BentoGrid = memo(function BentoGrid() {
         </div>
 
         <span className="hidden md:flex relative text-sm md:text-base">
-          @infinity Studios
+          @WorkLyft
         </span>
       </div>
 
@@ -202,8 +202,8 @@ const BentoGrid = memo(function BentoGrid() {
       <div className="flex justify-center md:hidden p-4 xl:flex flex-col relative min-h-[250px] border border-white/[25%] bg-black/[20%] backdrop-blur-md">
         <CardCorners />
         <span className="text-center mx-auto self-center">
-          Freelance Software Developer{" "}
-          <em className="text-[#61cc9c]">@fiverr</em>
+          FullStack Software Developer{" "}
+          <em className="text-[#61cc9c]">@WorkLyft</em>
         </span>
         <div
           className="h-[70px] my-auto"

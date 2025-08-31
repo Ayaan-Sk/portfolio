@@ -1,0 +1,8 @@
+This directory will contain timeline images. Replace this file with actual images.
+
+Suggested images:
+- coding-start.jpg
+- first-project.jpg
+- hackathon.jpg
+- open-source.jpg
+- conference.jpg

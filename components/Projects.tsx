@@ -32,7 +32,7 @@ function Projects() {
               key={index}
               className="relative min-w-[100%] h-full bg-[#61cc9c] snap-center flex flex-col items-center pt-14 md:pt-[100px] px-2 md:px-4"
             >
-              <Link href="https://github.com/creativeambition" target="_blank">
+              <Link href="https://github.com/Ayaan-Sk" target="_blank">
                 <div
                   className={`group relative flex items-center gap-2 md:gap-4 text-2xl md:text-5xl lg:text-6xl text-black/[80%] font-bold ${montserrat_alternates.className} font-bold`}
                 >

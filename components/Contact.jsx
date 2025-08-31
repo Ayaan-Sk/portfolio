@@ -13,7 +13,7 @@ function Contact() {
       <span
         className={`${poiret_one.className} mt-[80px] text-2xl text-gray-300`}
       >
-        infinity studios
+        WorkLyft
       </span>
 
       <div className="flex flex-col items-center justify-center gap-12 md:px-20 lg:px-[200px] mt-[30px] md:tracking-wide">
@@ -41,7 +41,7 @@ function Contact() {
         <div className="flex flex-wrap gap-5 md:gap-8 justify-around content-center">
           {contacts.map((contact) => {
             let cn =
-              contact.name == "Mail" || contact.name == "Fiverr"
+              contact.name == "Mail" || contact.name == "Github"
                 ? "hidden md:flex"
                 : "flex";
             return (
@@ -62,7 +62,7 @@ function Contact() {
       <footer
         className={`${poiret_one.className} mt-auto w-full flex justify-center gap-2 opacity-[70%]`}
       >
-        &copy;<span>infinity studios, 2025</span>
+        &copy;<span>WorkLyft, 2025</span>
       </footer>
     </div>
   );

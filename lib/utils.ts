@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaTiktok, FaYoutube } from "react-icons/fa6";
+import { FaFacebook, FaGithub, FaGoogle, FaLinkedinIn, FaMailchimp, FaTiktok, FaYoutube } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 
 export const navItems = [
@@ -9,6 +9,10 @@ export const navItems = [
   {
     name: "About",
     link: "about",
+  },
+  {
+    name: "Achievements",
+    link: "achievements",
   },
   {
     name: "Projects",
@@ -23,19 +27,19 @@ export const navItems = [
 export const contacts = [
   {
     name: "Mail",
-    link: "mailto:chrysayita@gmail.com",
+    link: "mailto:ayaansheikh.dev@gmail.com",
   },
   {
-    name: "Fiverr",
-    link: "https://www.fiverr.com/users/chrysyt",
+    name: "Github",
+    link: "https://github.com/Ayaan-Sk",
   },
   {
     name: "Instagram",
-    link: "https://instagram.com/_creative_ambition",
+    link: "https://www.instagram.com/md_ayaan_sheikh_/",
   },
   {
-    name: "Facebook",
-    link: "https://web.facebook.com/share/g/NY81ZaaMtJ6qrrPm/",
+    name: "Linkdin",
+    link: "https://www.linkedin.com/in/md-ayaan-sheikh/",
   },
 ];
 
@@ -43,27 +47,27 @@ export const socials = [
   {
     name: "Github",
     Icon: FaGithub,
-    link: "https://github.com/creativeambition/",
+    link: "https://github.com/Ayaan-Sk",
   },
-  {
-    name: "YouTube",
-    Icon: FaYoutube,
-    link: "https://youtube.com/@creative-ambition/",
-  },
+  // {
+  //   name: "YouTube",
+  //   Icon: FaYoutube,
+  //   link: "https://youtube.com/@creative-ambition/",
+  // },
   {
     name: "Instagram",
     Icon: AiFillInstagram,
-    link: "https://instagram.com/_creative_ambition/",
+    link: "https://www.instagram.com/md_ayaan_sheikh_/",
   },
+  // {
+  //   name: "TikTok",
+  //   Icon: FaGoogle,
+  //   link: "https://tiktok.com/@creative_ambition/",
+  // },
   {
-    name: "TikTok",
-    Icon: FaTiktok,
-    link: "https://tiktok.com/@creative_ambition/",
-  },
-  {
-    name: "Facebook",
-    Icon: FaFacebook,
-    link: "https://web.facebook.com/share/g/NY81ZaaMtJ6qrrPm/",
+    name: "Linkdin",
+    Icon: FaLinkedinIn,
+    link: "https://www.linkedin.com/in/md-ayaan-sheikh/",
   },
 ];
 

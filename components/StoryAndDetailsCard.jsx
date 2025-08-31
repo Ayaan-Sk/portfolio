@@ -80,28 +80,28 @@ const StoryAndDetailsCard = () => {
         <div className="text-md md:text-base flex flex-col gap-2 tracking-wide">
           <h2>
             name ~{" "}
-            <i className="font-medium text-[#61cc9c]">Chrysoprase Ayita</i>
+            <i className="font-medium text-[#61cc9c]">Muhammad Ayaan Sheikh</i>
           </h2>
           <h2>
             email ~{" "}
-            <i className="font-medium text-[#61cc9c]">chrysayita@gmail.com</i>
+            <i className="font-medium text-[#61cc9c]">ayaansheikh.dev@gmail.com</i>
           </h2>
           <h2>
             address ~{" "}
-            <i className="font-medium text-[#61cc9c]">Accra-Satellite</i>
+            <i className="font-medium text-[#61cc9c]">Nagpur, Maharashtra </i>
           </h2>
           <h2>
             phone ~{" "}
-            <i className="font-medium text-[#61cc9c]">[+233] 20 425 5719</i>
+            <i className="font-medium text-[#61cc9c]">[+91] 8007574169</i>
           </h2>
           <hr className="opacity-25" />
           <h2>
-            nationality ~ <i className="font-medium text-[#61cc9c]">Ghanaian</i>
+            nationality ~ <i className="font-medium text-[#61cc9c]">India</i>
           </h2>
           <h2>
             age ~{" "}
             <i className="font-medium text-[#61cc9c]">
-              {yearsSince("2002-11-24")}
+              {yearsSince("2004-11-6")}
             </i>
           </h2>
           <h2>

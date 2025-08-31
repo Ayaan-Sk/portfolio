@@ -8,7 +8,7 @@ function Hero() {
       className="relative flex flex-col min-h-[100vh]  px-2 items-center w-screen"
     >
       <div className="relative flex flex-col items-center w-fit mt-[100px] md:mt-[120px]">
-        <span className={`text-base sm:text-lg text-gray-400 mb-4`}>ca.io</span>
+        <span className={`text-base sm:text-lg text-gray-400 mb-4`}>Ayaan.Sheikh</span>
         <div className="flex flex-col items-center gap-3 lg:gap-5">
           <h1
             className={`${stretch.className} text-4xl sm:text-5xl md:text-7xl 2xl:text-8xl`}
