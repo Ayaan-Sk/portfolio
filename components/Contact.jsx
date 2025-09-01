@@ -29,7 +29,7 @@ function Contact() {
             </span>
           </div>
           <div>
-            <span className="md:hidden">in the&nbsp;</span>
+            <span className="md:hidden">Like never&nbsp;</span>
             <span className="relative mt-3 before:absolute before:h-[20px] before:w-full before:border-t before:top-[120%] before:rotate-[-8deg] before:rounded-[100%]">
               Before, Hire Me?
             </span>
