@@ -45,7 +45,7 @@ export default function PreloaderOverlay() {
           stroke="#61cc9c"
           strokeWidth="1"
         >
-          ca.io
+          A.S
         </text>
       </svg>
       <p className={`${montserrat_alternates.className} text-sm text-white/80`}>Loading…</p>

@@ -40,7 +40,7 @@ export default function Loading() {
           stroke="#61cc9c"
           strokeWidth="1"
         >
-          ca.io
+          A.S
         </text>
       </svg>
       <p className={`${montserrat_alternates.className} text-base`}>{messages[messageIndex]}</p>
