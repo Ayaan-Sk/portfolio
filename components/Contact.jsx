@@ -13,7 +13,7 @@ function Contact() {
       <span
         className={`${poiret_one.className} mt-[80px] text-2xl text-gray-300`}
       >
-        WorkLyft
+        Ayaan Sheikh
       </span>
 
       <div className="flex flex-col items-center justify-center gap-12 md:px-20 lg:px-[200px] mt-[30px] md:tracking-wide">
@@ -21,17 +21,17 @@ function Contact() {
           Ready to make your
           <div className="flex items-center">
             <PlaceholderTextAnimation
-              texts={["brand", "service", "business", "product"]}
+              texts={["brand", "Startup", "business", "Project"]}
             />
             <span className="flex whitespace-nowrap">
-              &nbsp;appearance&nbsp;
-              <span className="hidden md:flex">in the</span>
+              &nbsp;Grow&nbsp;
+              <span className="hidden md:flex">Like never</span>
             </span>
           </div>
           <div>
             <span className="md:hidden">in the&nbsp;</span>
             <span className="relative mt-3 before:absolute before:h-[20px] before:w-full before:border-t before:top-[120%] before:rotate-[-8deg] before:rounded-[100%]">
-              digital world?
+              Before, Hire Me?
             </span>
           </div>
         </div>
@@ -62,7 +62,7 @@ function Contact() {
       <footer
         className={`${poiret_one.className} mt-auto w-full flex justify-center gap-2 opacity-[70%]`}
       >
-        &copy;<span>WorkLyft, 2025</span>
+        &copy;<span>Ayaan Sheikh, 2025</span>
       </footer>
     </div>
   );
