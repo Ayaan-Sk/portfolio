@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <div className="fixed z-50 top-4 w-[90vw] sm:w-max bg-[#000000]/75 backdrop-blur-md border border-white/[0.1] p-4 sm:px-8 rounded-lg flex justify-center">
       <div
-        className={`${montserrat_alternates.className} flex flex-1 justify-around text-sm sm:gap-10`}
+        className={`${montserrat_alternates.className} flex items-center justify-center gap-4 sm:gap-10 text-xs sm:text-sm`}
       >
         {navItems.map((nav: { name: string; link: string }, id) => {
           return (
